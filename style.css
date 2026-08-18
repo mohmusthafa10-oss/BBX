@@ -61,128 +61,24 @@ nav ul a {
 ========================= */
 
 .hero {
-    min-height: 650px;
+    display: flex;
+    min-height: 50px;
 
-    padding: 70px 6%;
-
-    display: grid;
-    grid-template-columns: 1.4fr 0.7fr;
-
-    gap: 80px;
-    align-items: center;
+    padding: 70px;
+    text-align: center;
+    justify-content: center;
 }
 
 .hero-content h1 {
-    max-width: 500px;
+    max-width: 600px;
 
     font-size: clamp(40px, 8vw, 80px);
     line-height: 0.82;
+    text-align: center;
 
     letter-spacing: -5px;
     font-weight: 900;
-}
-
-.hero-content h1 span {
     color: #777777;
-}
-
-.hero-content p {
-    max-width: 420px;
-
-    margin-top: 35px;
-
-    color: #999999;
-    line-height: 1.6;
-    font-size: 16px;
-}
-
-.hero-btn {
-    display: inline-block;
-
-    margin-top: 30px;
-    padding: 16px 25px;
-
-    background: #242424;
-    color: white;
-
-    border-radius: 10px;
-
-    text-decoration: none;
-    font-size: 14px;
-
-    transition: 0.3s;
-}
-
-.hero-btn:hover {
-    background: #ffffff;
-    color: #000000;
-}
-
-
-/* =========================
-   FEATURED CARD
-========================= */
-
-.featured-card {
-    min-height: 450px;
-
-    padding: 25px;
-
-    background: #151515;
-
-    border-radius: 30px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-    text-decoration: none;
-    color: white;
-
-    transition: 0.3s;
-}
-
-.featured-card:hover {
-    transform: translateY(-8px);
-    background: #1c1c1c;
-}
-
-.card-top,
-.card-bottom {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.card-top {
-    color: #888888;
-    font-size: 12px;
-}
-
-.featured-content small {
-    color: #777777;
-}
-
-.featured-content h2 {
-    margin-top: 15px;
-
-    font-size: 55px;
-    line-height: 0.9;
-
-    letter-spacing: -3px;
-}
-
-.featured-content p {
-    margin-top: 20px;
-    color: #777777;
-}
-
-.card-bottom {
-    padding-top: 20px;
-
-    border-top: 1px solid #333333;
-
-    font-size: 14px;
 }
 
 
@@ -191,7 +87,7 @@ nav ul a {
 ========================= */
 
 .project-section {
-    padding: 100px 6%;
+    padding: 20px 6%;
 }
 
 .section-heading {
@@ -208,7 +104,7 @@ nav ul a {
 }
 
 .section-heading h2 {
-    font-size: clamp(40px, 6vw, 80px);
+    font-size: clamp(20px, 6vw, 40px);
 
     letter-spacing: -4px;
 }
@@ -223,11 +119,11 @@ nav ul a {
 
     grid-template-columns: repeat(3, 1fr);
 
-    gap: 12px;
+    gap: 20px;
 }
 
 .project-card {
-    min-height: 220px;
+    min-height: 20px;
 
     padding: 25px;
 
