@@ -1,0 +1,556 @@
+:root {
+
+    /* =========================
+       COLORS
+    ========================= */
+
+    --color-primary: #18442A;       /* Deep Forest */
+    --color-secondary: #45644A;     /* Olive */
+    --color-accent: #E4DBC4;        /* Sand */
+    --color-background: #F3EDE3;    /* Off White */
+
+    --color-text: #18442A;
+    --color-text-light: #F3EDE3;
+    --color-border: #D8D4C8;
+
+    --color-sale: #B84A3A;
+    --color-white: #FFFFFF;
+
+
+    /* =========================
+       FONTS
+    ========================= */
+
+    --font-primary: Arial, Helvetica, sans-serif;
+    --font-heading: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+
+    /* =========================
+       FONT SIZES
+    ========================= */
+
+    --font-xs: 0.75rem;
+    --font-sm: 0.875rem;
+    --font-md: 1rem;
+    --font-lg: 1.25rem;
+    --font-xl: 2rem;
+    --font-2xl: 3rem;
+    --font-3xl: 5rem;
+
+
+    /* =========================
+       FONT WEIGHTS
+    ========================= */
+
+    --weight-regular: 400;
+    --weight-medium: 500;
+    --weight-semibold: 600;
+    --weight-bold: 700;
+
+
+    /* =========================
+       SPACING
+    ========================= */
+
+    --space-xs: 0.5rem;
+    --space-sm: 1rem;
+    --space-md: 1.5rem;
+    --space-lg: 2rem;
+    --space-xl: 3rem;
+    --space-2xl: 5rem;
+
+
+    /* =========================
+       PADDING
+    ========================= */
+
+    --padding-page: 2rem;
+    --padding-section: 5rem;
+    --padding-card: 1.5rem;
+    --padding-button: 0.75rem 1.5rem;
+
+
+    /* =========================
+       BORDER
+    ========================= */
+
+    --border-thin: 1px solid var(--color-border);
+    --border-radius-sm: 8px;
+    --border-radius-md: 14px;
+    --border-radius-lg: 20px;
+
+
+    /* =========================
+       SHADOW
+    ========================= */
+
+    --shadow-card: 0 5px 15px rgba(24, 68, 42, 0.12);
+
+    --shadow-card-hover:
+        0 15px 30px rgba(24, 68, 42, 0.25);
+
+
+    /* =========================
+       TRANSITION
+    ========================= */
+
+    --transition-fast: 0.2s ease;
+    --transition-normal: 0.3s ease;
+    --transition-slow: 0.5s ease;
+
+
+    /* =========================
+       TRANSFORM
+    ========================= */
+
+    --card-hover-y: -10px;
+    --image-hover-scale: 1.1;
+    --button-hover-rotate: -3deg;
+
+
+    /* =========================
+       LAYOUT
+    ========================= */
+
+    --container-width: 1200px;
+    --card-width: 220px;
+    --card-gap: 1.5rem;
+
+
+    /* =========================
+       ANIMATION
+    ========================= */
+
+    --animation-pulse: 1.5s ease-in-out infinite;
+    --animation-fade: 0.8s ease forwards;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--color-background);
+    color: var(--color-text);
+    font-family: var(--font-primary);
+    line-height: 1.5;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    background-color: var(--color-primary);
+
+    padding: var(--padding-page);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header > a {
+    color: var(--color-text-light);
+    text-decoration: none;
+
+    font-size: var(--font-xl);
+    font-weight: var(--weight-bold);
+}
+
+nav ul {
+    list-style: none;
+
+    display: flex;
+    gap: var(--space-lg);
+}
+
+nav a {
+    color: var(--color-text-light);
+    text-decoration: none;
+
+    font-size: var(--font-sm);
+    font-weight: var(--weight-semibold);
+
+    transition: var(--transition-normal);
+}
+
+nav a:hover {
+    color: var(--color-accent);
+}
+
+
+/* =========================
+   HOME
+========================= */
+
+#home {
+    min-height: 70vh;
+
+    background-color: var(--color-primary);
+    color: var(--color-text-light);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+
+    text-align: center;
+
+    padding: var(--padding-section);
+}
+
+#home h1 {
+    font-family: var(--font-heading);
+    font-size: clamp(4rem, 4vw, 4rem);
+    letter-spacing: -5px;
+
+    margin-bottom: var(--space-md);
+}
+
+#home p {
+    font-size: var(--font-lg);
+    color: var(--color-accent);
+    max-width: 600px;
+}
+
+
+/* =========================
+   PRODUCTS SECTION
+========================= */
+
+#product-container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+
+    padding: var(--padding-section) var(--padding-page);
+
+    display: grid;
+
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(var(--card-width), 1fr)
+    );
+
+    gap: var(--card-gap);
+}
+
+.section-title {
+    grid-column: 1 / -1;
+
+    font-family: var(--font-heading);
+    font-size: var(--font-2xl);
+
+    text-align: center;
+
+    margin-bottom: var(--space-lg);
+
+    color: var(--color-primary);
+}
+
+
+/* =========================
+   PRODUCT CARD
+========================= */
+
+.product-card {
+    position: relative;
+
+    background-color: var(--color-white);
+
+    border: var(--border-thin);
+    border-radius: var(--border-radius-md);
+
+    padding: var(--padding-card);
+
+    min-height: 420px;
+
+    display: flex;
+    flex-direction: column;
+
+    box-shadow: var(--shadow-card);
+
+    /* Required for smooth hover effects */
+    transition:
+        transform var(--transition-normal),
+        box-shadow var(--transition-normal);
+
+    /* Page-load animation */
+    opacity: 0;
+
+    animation: fadeIn var(--animation-fade);
+}
+
+
+/* =========================
+   SALE BADGE
+========================= */
+
+.sale-badge {
+    position: absolute;
+
+    top: 15px;
+    right: 15px;
+
+    background-color: var(--color-sale);
+    color: var(--color-white);
+
+    padding: 5px 10px;
+
+    border-radius: 50px;
+
+    font-size: var(--font-xs);
+    font-weight: var(--weight-bold);
+
+    z-index: 2;
+
+    /* Continuous animation */
+    animation: pulse var(--animation-pulse);
+}
+
+
+/* =========================
+   PRODUCT IMAGE
+========================= */
+
+.product-img {
+    height: 230px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+
+    margin-bottom: var(--space-md);
+}
+
+.product-img img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+
+    /* Smooth image zoom */
+    transition: transform var(--transition-normal);
+}
+
+
+/* =========================
+   PRODUCT NAME
+========================= */
+
+.product-name {
+    font-size: var(--font-md);
+    font-weight: var(--weight-semibold);
+
+    color: var(--color-primary);
+
+    margin-bottom: var(--space-xs);
+}
+
+
+/* =========================
+   PRODUCT PRICE
+========================= */
+
+.product-price {
+    font-size: var(--font-lg);
+    font-weight: var(--weight-bold);
+
+    color: var(--color-secondary);
+
+    margin-bottom: var(--space-md);
+}
+
+
+/* =========================
+   ADD TO CART BUTTON
+========================= */
+
+.add-to-cart {
+    margin-top: auto;
+
+    width: 100%;
+
+    padding: var(--padding-button);
+
+    border: none;
+    border-radius: var(--border-radius-sm);
+
+    background-color: var(--color-primary);
+    color: var(--color-white);
+
+    font-size: var(--font-md);
+    font-weight: var(--weight-semibold);
+
+    cursor: pointer;
+
+    
+}
+
+.add-to-cart:hover {
+    /* Smooth rotation */
+    transition:
+        transform var(--transition-normal),
+        background-color var(--transition-normal);
+    background-color: var(--color-secondary);
+}
+
+
+/* =========================
+   CARD HOVER EFFECTS
+========================= */
+
+/*
+    When hovering the card:
+
+    1. Card moves up 10px
+    2. Image zooms to 110%
+    3. Button rotates
+    4. Shadow increases
+*/
+
+.product-card:hover {
+    transform: translateY(var(--card-hover-y));
+
+    box-shadow: var(--shadow-card-hover);
+}
+
+.product-card:hover .product-img img {
+    transform: scale(var(--image-hover-scale));
+}
+
+.product-card:hover .add-to-cart {
+    transform: rotate(var(--button-hover-rotate));
+}
+
+
+/* =========================
+   CONTACT
+========================= */
+
+#contact {
+    background-color: var(--color-primary);
+    color: var(--color-text-light);
+
+    text-align: center;
+
+    padding: var(--padding-section) var(--padding-page);
+}
+
+#contact .section-title {
+    color: var(--color-text-light);
+}
+
+#contact a {
+    color: var(--color-accent);
+
+    text-decoration: none;
+
+    font-size: var(--font-lg);
+
+    transition: var(--transition-normal);
+}
+
+#contact a:hover {
+    opacity: 0.7;
+}
+
+#contact p {
+    margin-top: var(--space-xs);
+
+    color: var(--color-accent);
+}
+
+
+/* =========================
+   ANIMATION 1
+   SALE BADGE PULSE
+========================= */
+
+@keyframes pulse {
+
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+
+}
+
+
+/* =========================
+   ANIMATION 2
+   CARD FADE IN
+========================= */
+
+@keyframes fadeIn {
+
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 700px) {
+
+    header {
+        flex-direction: column;
+        gap: var(--space-sm);
+    }
+
+    nav ul {
+        gap: var(--space-sm);
+    }
+
+    #home {
+        min-height: 60vh;
+        padding: var(--space-xl) var(--space-md);
+    }
+
+    #home h1 {
+        font-size: 4rem;
+    }
+
+    #product-container {
+        grid-template-columns: 1fr;
+        padding: var(--space-xl) var(--space-md);
+    }
+
+    .product-card {
+        max-width: 400px;
+        width: 100%;
+        margin: auto;
+    }
+
+}
