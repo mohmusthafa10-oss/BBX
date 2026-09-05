@@ -614,18 +614,18 @@ input {
 
 .restaurant-section {
     width: min(1200px, calc(100% - 48px));
-    margin: 60px auto 70px;
+    margin: 0 auto 70px;
 }
 
 
-/* Header */
+/* Section heading */
 
 .restaurant-section .section-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
 
-    margin-bottom: 28px;
+    margin-bottom: 24px;
 }
 
 .restaurant-section .section-header h2 {
@@ -646,32 +646,35 @@ input {
     width: 36px;
     height: 36px;
 
+    border: none;
+    border-radius: 50%;
+
+    background-color: #e9e9eb;
+    color: #555;
+
+    font-size: 20px;
+
     display: flex;
     align-items: center;
     justify-content: center;
 
-    border: none;
-    border-radius: 50%;
-
-    background-color: #e9e9e9;
-    color: #555;
-
-    font-size: 18px;
     cursor: pointer;
 }
 
 
-/* Restaurant row */
+/* Restaurant list */
 
 .restaurant-list {
     display: flex;
-    gap: 18px;
+    gap: 16px;
 
     overflow: hidden;
 }
 
 
-/* Restaurant card */
+/* =========================
+   RESTAURANT CARD
+   ========================= */
 
 .restaurant-card {
     flex: 0 0 352px;
@@ -689,7 +692,7 @@ input {
 
 /* Restaurant image */
 
-.restaurant-card img {
+.restaurant-card > img {
     width: 100%;
     height: 204px;
 
@@ -699,45 +702,159 @@ input {
 }
 
 
-/* Restaurant information */
+/* Card information */
 
 .restaurant-info {
     padding: 12px 14px 14px;
 }
 
-.restaurant-info h3 {
-    margin-bottom: 8px;
 
-    font-size: 16px;
+/* =========================
+   TITLE + RATING
+   ========================= */
+
+.restaurant-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: relative;
+
+    margin-top: -48px;
+    margin-bottom: 28px;
+}
+
+.restaurant-title h3 {
+    max-width: 285px;
+
+    margin: 0;
+
+    color: var(--white);
+
+    font-size: 17px;
     font-weight: 700;
 
-    color: var(--text);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.restaurant-title span {
+    flex-shrink: 0;
+
+    color: var(--white);
+
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+/* =========================
+   DETAILS + LOCATION
+   ========================= */
+
+.restaurant-details,
+.restaurant-location {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 10px;
+}
+
+.restaurant-details p,
+.restaurant-location p {
+    margin: 0 0 7px;
+
+    color: #686b78;
+
+    font-size: 14px;
 
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 
-.restaurant-info p {
-    margin-bottom: 6px;
+.restaurant-details p:first-child,
+.restaurant-location p:first-child {
+    flex: 1;
+}
+
+.restaurant-details p:last-child,
+.restaurant-location p:last-child {
+    flex-shrink: 0;
+}
+
+
+/* =========================
+   GREEN OFFER
+   ========================= */
+
+.restaurant-offer {
+    min-height: 46px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    margin-top: 8px;
+    padding: 0 14px;
+
+    border-radius: 9px;
+
+    background-color: #18a974;
+
+    color: var(--white);
 
     font-size: 14px;
-    line-height: 1.3;
+}
 
-    color: var(--text-light);
+.restaurant-offer span {
+    font-size: 18px;
+}
+
+.restaurant-offer strong {
+    white-space: nowrap;
+}
+
+.restaurant-offer strong:last-child {
+    margin-left: auto;
+}
+
+
+/* =========================
+   BANK OFFER
+   ========================= */
+
+.restaurant-bank-offer {
+    margin-top: 13px;
+    padding: 10px;
+
+    border-radius: 9px;
+
+    background-color: #c9f5e4;
+
+    color: #16a673;
+
+    font-size: 16px;
 
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 
-.restaurant-info span {
-    display: block;
+
+/* =========================
+   CASHBACK
+   ========================= */
+
+.restaurant-cashback {
+    margin-top: 15px;
+
+    color: #5534d1;
 
     font-size: 14px;
-    font-weight: 600;
-
-    color: var(--text);
 }
 
 /* =========================
@@ -800,7 +917,7 @@ input {
     border: 1px solid #e5e5e5;
     border-radius: 10px;
 
-    color: var(--text);
+    color: rgb(75, 74, 74);
     background-color: var(--white);
 
     font-size: 15px;
