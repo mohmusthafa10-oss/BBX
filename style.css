@@ -55,6 +55,31 @@ nav ul a {
     font-size: 14px;
 }
 
+.menu-btn {
+    display: none;
+
+    width: 40px;
+    height: 40px;
+
+    background: transparent;
+    border: none;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 5px;
+
+    cursor: pointer;
+}
+
+.menu-btn span {
+    width: 24px;
+    height: 2px;
+
+    background: white;
+}
+
 
 /* =========================
    HERO
@@ -178,78 +203,135 @@ nav ul a {
 ========================= */
 
 footer {
-    padding: 40px 6%;
+    margin-top: 80px;
+    padding: 80px 6% 30px;
+
+    border-top: 1px solid #222222;
+}
+
+
+/* Footer Top */
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    gap: 50px;
+}
+
+
+.footer-name p {
+    margin-bottom: 15px;
+
+    color: #666666;
+
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+
+.footer-name h2 {
+    font-size: clamp(50px, 8vw, 40px);
+    line-height: 0.85;
+
+    letter-spacing: -5px;
+}
+
+
+/* Links */
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+.footer-links a {
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 18px;
+
+    transition: 0.3s;
+}
+
+
+.footer-links a:hover {
+    color: #777777;
+    transform: translateX(5px);
+}
+
+
+/* Footer Bottom */
+
+.footer-bottom {
+    margin-top: 100px;
+    padding-top: 20px;
 
     border-top: 1px solid #222222;
 
     display: flex;
     justify-content: space-between;
-}
+    align-items: center;
 
-footer p {
     color: #555555;
+
+    font-size: 13px;
 }
 
-footer a {
-    color: white;
+
+.footer-bottom a {
+    color: #777777;
     text-decoration: none;
+
+    transition: 0.3s;
 }
 
 
-/* =========================
-   RESPONSIVE
-========================= */
-
-@media (max-width: 800px) {
-
-    nav ul {
-        gap: 15px;
-    }
-
-    .hero {
-        grid-template-columns: 1fr;
-        padding-top: 40px;
-    }
-
-    .hero-content h1 {
-        letter-spacing: -4px;
-    }
-
-    .featured-card {
-        min-height: 350px;
-    }
-
-    .project-grid {
-        grid-template-columns: 1fr;
-    }
-
+.footer-bottom a:hover {
+    color: #ffffff;
 }
 
 
-@media (max-width: 500px) {
+/* ==================
+    MOBILE VIEW
+==================== */
 
-    header {
-        padding: 22px 5%;
+
+@media (max-width: 700px) {
+
+    nav {
+        flex-direction: row;
+        justify-content: space-between;
     }
 
     nav ul {
         display: none;
     }
 
+    .menu-btn {
+        display: flex;
+    }
+
     .hero {
-        padding: 50px 5%;
+        grid-template-columns: 1fr;
     }
 
-    .hero-content h1 {
-        font-size: 40px;
+    .project-grid {
+        grid-template-columns: 1fr;
     }
 
-    .project-section {
-        padding: 70px 5%;
+    .footer-top {
+        flex-direction: column;
+        align-items: flex-start;
     }
 
-    .section-heading h2 {
-        letter-spacing: -2px;
+    .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
     }
 
 }
