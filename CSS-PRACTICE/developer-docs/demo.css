@@ -1,0 +1,114 @@
+html{
+    margin: 0;
+    padding: 2rem 20rem;
+    background-color: #4f4e4e;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.center-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Use Flexbox when you want simple horizontal + vertical centering */
+}
+
+.center-grid {
+    display: grid;
+    place-items: center;
+
+    /* Use Grid when the element only needs simple two-dimensional centering */
+}
+
+.center-absolute {
+    position: relative;
+}
+
+.center-absolute span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    /* Use absolute positioning when an element needs precise positioning inside a container */
+}
+
+.center-margin {
+    width: fit-content;
+    margin: 0 auto;
+
+    /* Use margin auto when you only need to center a block horizontally */
+}
+
+
+/* z-index bug  */
+
+.z-parent {
+    position: relative;
+    /* z-index: 1;
+    opacity: 0.99; */
+}
+
+.z-element-one {
+    position: absolute;
+    z-index: 9999;
+} 
+
+.z-element-two {
+    position: relative;
+    z-index: 1; 
+}
+
+
+/* 3. SPECIFICITY BUG */
+
+#special-button {
+    background-color: black;
+}
+
+.special-button {
+    background-color: blue;
+}
+
+/*  ID       #special-button       → stronger
+    Class    .special-button      → weaker */
+
+    /* Fix Button colour */
+
+/* #special-button.special-button {
+    background-color: blue;
+} */
+
+
+/* Margin Collapse */
+
+.margin-box {
+    padding: 1rem;
+    background-color: lightgray;
+    color: black;
+}
+
+.first-box {
+    margin-bottom: 3rem;
+}
+
+.second-box {
+    margin-top: 2rem;
+}
+
+/* Margin Collapse fix */
+
+.margin-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.first-box {
+    margin-bottom: 3rem;
+}
+
+.second-box {
+    margin-top: 2rem;
+}

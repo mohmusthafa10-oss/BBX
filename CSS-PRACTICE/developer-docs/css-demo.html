@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS Lab</title>
+
+    <link rel="stylesheet" href="demo.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>CSS Lab</h1>
+
+        <p>
+            CSS concepts, centering techniques, and common CSS bugs.
+        </p>
+    </header>
+
+
+    <main>
+
+        <!-- =================================
+             1. FOUR WAYS TO CENTER
+        ================================== -->
+
+        <section class="lab-section">
+
+            <h2>Four Ways to Center an Element</h2>
+
+            <p>
+                The same element can be centered using different CSS techniques.
+            </p>
+
+
+            <div class="centering-demos">
+
+                <!-- Flexbox -->
+
+                <article class="demo">
+
+                    <h3>1. Flexbox</h3>
+
+                    <div class="center-flex">
+                        <span>Center me</span>
+                    </div>
+
+                    <p>
+                        Choose this when you need to align items
+                        easily inside a flexible container.
+                    </p>
+
+                </article>
+
+
+                <!-- Grid -->
+
+                <article class="demo">
+
+                    <h3>2. CSS Grid</h3>
+
+                    <div class="center-grid">
+                        <span>Center me</span>
+                    </div>
+
+                    <p>
+                        Choose this when the container already uses
+                        CSS Grid for its layout.
+                    </p>
+
+                </article>
+
+
+                <!-- Absolute + Transform -->
+
+                <article class="demo">
+
+                    <h3>3. Absolute + Transform</h3>
+
+                    <div class="center-absolute">
+                        <span>Center me</span>
+                    </div>
+
+                    <p>
+                        Choose this when an element needs precise
+                        positioning inside a positioned container.
+                    </p>
+
+                </article>
+
+
+                <!-- Margin Auto -->
+
+                <article class="demo">
+
+                    <h3>4. Margin Auto</h3>
+
+                    <div class="center-margin">
+                        <span>Center me</span>
+                    </div>
+
+                    <p>
+                        Choose this when horizontally centering
+                        a block element with a defined width.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================
+             2. Z-INDEX BUG
+        ================================== -->
+
+        <section class="lab-section">
+
+            <h2>Z-Index Bug</h2>
+
+            <p>
+                An element with a higher z-index can still appear
+                behind another element when stacking contexts are involved.
+            </p>
+
+
+            <div class="z-index-demo">
+
+                <div class="z-parent">
+
+                    <div class="z-element-one">
+                       <span style="background-color: red;">-----</span>
+                    </div>
+
+                </div>
+
+
+                <div class="z-element-two">
+                       <span style="background-color: rgb(218, 225, 5);">=====</span>
+                </div>
+
+            </div>
+
+
+            <div class="explanation">
+
+                <h3>What happened?</h3>
+
+                <p>
+                    <span style="background-color: red;">-----</span> has z-index: 9999, but its parent
+                    creates a stacking context. The parent is placed
+                    below <span style="background-color: rgb(218, 225, 5);">=====</span>, so the child cannot escape that
+                    stacking context.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================
+             3. SPECIFICITY BUG
+        ================================== -->
+
+        <section class="lab-section">
+
+            <h2>Specificity Bug</h2>
+
+            <p>
+                A class selector cannot override a more specific ID selector.
+            </p>
+
+
+            <div class="specificity-demo">
+
+                <button id="special-button" class="special-button">
+                    Specificity Test
+                </button>
+
+            </div>
+
+
+            <div class="explanation">
+
+                <h3>What happened?</h3>
+
+                <p>
+                    The ID selector has higher specificity than
+                    the class selector, so the class cannot override it.
+                </p>
+
+                <p>
+                    Fix the conflict without using
+                    <code>!important</code>.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================
+             4. MARGIN COLLAPSE
+        ================================== -->
+
+        <section class="lab-section">
+
+            <h2>Margin Collapse</h2>
+
+            <p>
+                Adjacent vertical margins can collapse into one margin.
+            </p>
+
+
+            <div class="margin-collapse-demo">
+
+                <div class="margin-box first-box">
+                    Box A
+                </div>
+
+                <div class="margin-box second-box">
+                    Box B
+                </div>
+
+            </div>
+
+
+            <div class="explanation">
+
+                <h3>What happened?</h3>
+
+                <p>
+                    The bottom margin of Box A and the top margin
+                    of Box B collapse instead of adding together.
+                </p>
+
+                <p>
+                    Prevent the collapse using an appropriate
+                    CSS technique.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================
+             5. MODAL DEMO
+        ================================== -->
+
+        <section class="lab-section">
+
+            <h2>Fixed Modal</h2>
+
+            <p>
+                This demonstrates position: fixed and z-index.
+            </p>
+
+            <button class="open-modal">
+                Open Modal
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <!-- Modal -->
+
+    <div class="modal-overlay">
+
+        <div class="modal">
+
+            <button class="close-modal">
+                ×
+            </button>
+
+            <h2>CSS Modal</h2>
+
+            <p>
+                This overlay uses position: fixed and a high z-index.
+            </p>
+
+            <button>
+                Continue
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <footer>
+
+        <p>
+            CSS Lab — Plain CSS Practice
+        </p>
+
+    </footer>
+
+</body>
+
+</html>

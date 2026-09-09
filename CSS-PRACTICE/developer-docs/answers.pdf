@@ -1,0 +1,11 @@
+### 1. Explain the box model.
+
+The CSS box model explains how each HTML element takes up space on a page. Every element has four parts: content, padding, border, and margin. The content is the text or image inside the element. Padding adds space around the content. The border goes around the padding. Margin adds space outside the element and separates it from other elements. By default, the width and height only include the content. Using `box-sizing: border-box` includes the padding and border in the total size, making layouts easier to control.
+
+### 2. How does specificity work?
+
+Specificity decides which CSS rule is used when more than one rule targets the same element. Some selectors are stronger than others. Inline styles are usually the strongest, followed by IDs, classes, and element selectors. For example, `#button` is stronger than `.button`, and `.button` is stronger than `button`. If two rules have the same strength, the rule written later normally wins. Understanding specificity helps explain why a style may not work. It is better to use simple, clear selectors instead of using `!important`.
+
+### 3. When do you reach for Grid rather than Flexbox?
+
+I use CSS Grid when I need to arrange items in both rows and columns. It works well for page layouts, image galleries, dashboards, and card sections. Flexbox is better for arranging items in one direction, either in a row or a column. For example, I might use Grid to create a page with a sidebar and main content area. I might use Flexbox to arrange links in a navigation bar. Grid and Flexbox can also be used together. Grid can control the main layout, while Flexbox can arrange the content inside each section.

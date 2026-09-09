@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Registration Form</h1>
+    </header>
+
+    <main>
+      <form>
+        <!-- Step 1: Personal Details -->
+        <div class="step">
+          <h2 class="steps">Personal Details</h2>
+
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            minlength="2"
+            maxlength="20"
+            required
+            aria-describedby="name-error"
+            aria-invalid="false"
+          />
+          <p id="name-error" class="error"></p>
+          <br /><br />
+
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            autocomplete="email"
+            aria-describedby="email-error"
+            aria-invalid="false"
+          />
+          <p id="email-error" class="error"></p>
+          <br /><br />
+
+          <label for="phone">Phone:</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            required
+            pattern="[0-9]{10}"
+            title="Enter a 10-digit phone number"
+            aria-describedby="phone-error"
+            aria-invalid="false"
+          />
+          <p id="phone-error" class="error"></p>
+          <br /><br />
+
+          <label for="age">Age:</label>
+          <input
+            type="number"
+            id="age"
+            name="age"
+            min="18"
+            max="100"
+            required
+            aria-describedby="age-error"
+            aria-invalid="false"
+          />
+          <p id="age-error" class="error"></p>
+          <br /><br />
+        </div>
+        <!-- Phone numbers are not mathematical numbers.
+                They may contain +, spaces, hyphens, or leading zeros.
+                Therefore, type="tel" is used instead of type="number".
+                The pattern controls the allowed phone-number format.  -->
+
+        <!-- Step 2: Account -->
+        <div class="step">
+          <h2 class="steps">Account</h2>
+
+          <label for="username">Username:</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            minlength="5"
+            maxlength="10"
+            autocomplete="username"
+            required
+            aria-describedby="username-error"
+            aria-invalid="false"
+          />
+          <p id="username-error" class="error"></p>
+          <br /><br />
+
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            required
+            minlength="8"
+            maxlength="30"
+            autocomplete="new-password"
+            aria-describedby="password-error"
+            aria-invalid="false"
+          />
+          <p id="password-error" class="error"></p>
+          <br /><br />
+
+          <label for="confirmPassword">Confirm Password:</label>
+          <input
+            type="password"
+            id="confirmPassword"
+            name="confirmPassword"
+            required
+            minlength="8"
+            maxlength="30"
+            autocomplete="new-password"
+            aria-describedby="confirmPassword-error"
+            aria-invalid="false"
+          />
+          <p id="confirmPassword-error" class="error"></p>
+          <br /><br />
+
+          <fieldset aria-describedby="gender-error">
+    <legend>Gender</legend>
+
+    <input type="radio" id="male" name="gender" value="male" required>
+    <label for="male">Male</label>
+
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female">Female</label>
+
+    <p id="gender-error" class="error"></p>
+</fieldset>
+          <input type="button" class="back" value="Back" />
+          <input type="button" class="next" value="Next" />
+
+          <br /><br />
+        </div>
+
+        <!-- Step 3: Preferences -->
+
+        <div class="step">
+          <h2 class="steps">Preferences</h2>
+
+          <fieldset>
+            <legend>Interests</legend>
+
+            <input type="checkbox" id="movie" name="interests" value="movie" />
+            <label for="movie">Movie</label>
+
+            <input type="checkbox" id="music" name="interests" value="music" />
+            <label for="music">Music</label>
+
+            <input type="checkbox" id="games" name="interests" value="games" />
+            <label for="games">Games</label>
+
+            <input
+              type="checkbox"
+              id="reading"
+              name="interests"
+              value="reading"
+            />
+            <label for="reading">Reading</label>
+          </fieldset>
+          <br /><br />
+
+          <label for="resume">Upload Resume:</label>
+          <input type="file" id="resume" name="resume" required accept=".pdf" />
+          <p>PDF only. Maximum file size: 2 MB</p>
+          <br /><br />
+
+          <input type="button" class="back" value="Back" />
+          <input type="hidden" name="account_type" value="student" />
+          <input type="submit" value="Submit" />
+        </div>
+      </form>
+    </main>
+    <script src="index.js" defer></script>
+  </body>
+</html>

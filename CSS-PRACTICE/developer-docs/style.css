@@ -1,0 +1,474 @@
+/* =========================
+   GLOBAL RESET
+========================= */
+
+*,
+*::before,
+*::after {
+    /* Includes padding and border inside the element's declared width/height */
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* =========================
+   BASE STYLES
+========================= */
+
+:root {
+    --primary: #243447;
+    --secondary: #3b82a0;
+    --background: #f5f7fa;
+    --surface: #ffffff;
+    --text: #263238;
+    --muted-text: #667085;
+
+    --small-spacing: 0.5rem;
+    --medium-spacing: 1rem;
+    --large-spacing: 2rem;
+
+    --radius: 0.75rem;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+
+    background-color: var(--background);
+    color: var(--text);
+}
+
+
+/* =========================
+   TYPOGRAPHY
+========================= */
+
+h1,
+h2,
+h3,
+h4,
+p {
+    margin-top: 0;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+p {
+    color: var(--muted-text);
+}
+
+/* =========================
+   PAGE STRUCTURE
+========================= */
+
+body {
+    min-height: 100vh;
+
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+.page-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+aside {
+    display: none;
+}
+
+@media (min-width: 48rem) {
+
+    .page-layout {
+        grid-template-columns: 15rem 1fr;
+    }
+
+    aside {
+        display: block;
+    }
+
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    background-color: var(--primary);
+    color: white;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 1rem;
+}
+
+.logo {
+    color: white;
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+header button {
+    padding: 0.5rem 1rem;
+
+    border: none;
+    border-radius: var(--radius);
+
+    background-color: var(--secondary);
+    color: white;
+
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* =========================
+   SIDEBAR
+========================= */
+
+aside {
+    background-color: var(--surface);
+    padding: 1.5rem;
+    border-right: 0.0625rem solid #d9dee5;
+}
+
+aside h2 {
+    margin-bottom: 1.5rem;
+    font-size: 1.25rem;
+}
+
+aside h3 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+
+    font-size: 1rem;
+    color: var(--muted-text);
+}
+
+aside ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+aside li {
+    margin-bottom: 0.5rem;
+}
+
+aside a {
+    display: block;
+
+    padding: 0.5rem 0.75rem;
+
+    color: var(--text);
+    text-decoration: none;
+
+    border-radius: var(--radius);
+}
+
+aside a:hover {
+    background-color: var(--background);
+    color: var(--secondary);
+}
+
+/* =========================
+   MAIN CONTENT
+========================= */
+
+main {
+    min-width: 0;
+    padding: 1.5rem;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    padding: 2rem 1.5rem;
+    margin-bottom: 2rem;
+
+    background-color: var(--primary);
+    color: white;
+
+    border-radius: var(--radius);
+}
+
+.hero span {
+    font-size: 0.875rem;
+    font-weight: bold;
+    letter-spacing: 0.0625rem;
+}
+
+.hero h1 {
+    margin: 0.75rem 0;
+
+    color: white;
+    font-size: 2rem;
+}
+
+.hero p {
+    margin-bottom: 1.5rem;
+
+    color: #e5e7eb;
+    font-size: 1rem;
+}
+
+.hero button {
+    padding: 0.75rem 1.25rem;
+
+    border: none;
+    border-radius: var(--radius);
+
+    background-color: var(--secondary);
+    color: white;
+
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* =========================
+   TOPIC CARDS
+========================= */
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 1.5rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+
+    padding: 1.5rem;
+
+    background-color: var(--surface);
+
+    border: 0.0625rem solid #d9dee5;
+    border-radius: var(--radius);
+}
+
+.card h3 {
+    margin-bottom: 0.75rem;
+}
+
+.card p {
+    margin-bottom: 1.5rem;
+}
+
+.card a {
+    margin-top: auto;
+
+    color: var(--secondary);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* =========================
+   NEWSLETTER
+========================= */
+
+.newsletter {
+    margin-top: 2rem;
+    padding: 1.5rem;
+
+    background-color: var(--surface);
+
+    border: 0.0625rem solid #d9dee5;
+    border-radius: var(--radius);
+}
+
+.newsletter h2 {
+    margin-bottom: 0.5rem;
+}
+
+.newsletter p {
+    margin-bottom: 1.5rem;
+}
+
+.form-row input {
+    width: 100%;
+
+    padding: 0.75rem;
+
+    border: 0.0625rem solid #cbd5e1;
+    border-radius: var(--radius);
+
+    font-size: 1rem;
+}
+
+.newsletter button {
+    margin-top: 1rem;
+
+    padding: 0.75rem 1.25rem;
+
+    border: none;
+    border-radius: var(--radius);
+
+    background-color: var(--secondary);
+    color: white;
+
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+@media (min-width: 48rem) {
+
+    .form-row {
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .form-row label {
+        flex: 0 0 8rem;
+    }
+
+    .form-row input {
+        flex: 1;
+    }
+
+    .newsletter button {
+        margin-top: 1rem;
+    }
+
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+
+    padding: 1.5rem;
+
+    background-color: var(--primary);
+    color: white;
+}
+
+footer p {
+    margin: 0;
+    color: white;
+}
+
+footer nav {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+/* =========================
+   MODAL
+========================= */
+
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 2000;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal {
+    position: relative;
+    width: min(90%, 30rem);
+    padding: 2rem;
+
+    background-color: var(--surface);
+    border-radius: var(--radius);
+}
+
+.modal-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+
+    border: none;
+    background: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+
+@media (min-width: 64rem) {
+
+    main {
+        padding: 2rem;
+    }
+
+    .hero {
+        padding: 3rem;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+}
+
+
+@media (min-width: 80rem) {
+
+    main {
+        padding: 3rem;
+    }
+
+    .hero {
+        padding: 4rem;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+}
