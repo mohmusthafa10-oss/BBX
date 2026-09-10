@@ -1,0 +1,306 @@
+/* =========================
+   Basic Reset
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fa;
+    color: #263238;
+}
+
+
+/* =========================
+   Header
+========================= */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 20px 50px;
+
+    background-color: #263238;
+}
+
+header > a {
+    color:  purple;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+header button {
+    padding: 8px 15px;
+    margin-left: 8px;
+
+    border: none;
+    border-radius: 6px;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   Main
+========================= */
+
+main {
+    text-align: center;
+    padding: 60px 30px;
+}
+
+main > span {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+h1 {
+    margin: 15px 0;
+    font-size: 40px;
+}
+
+main > p {
+    margin-bottom: 40px;
+    color: #607d8b;
+}
+
+
+/* =========================
+   Pricing Container
+========================= */
+
+#pricing-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 25px;
+
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+
+/* =========================
+   Pricing Card
+========================= */
+
+.card {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    width: 320px;
+    padding: 30px;
+
+    background-color: white;
+
+    border: 1px solid #dce3e8;
+    border-radius: 12px;
+
+    text-align: left;
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================
+   Featured Pro Card
+========================= */
+
+.featured-card {
+    border: 2px solid #3e556e;
+    transform: scale(1.03);
+}
+
+.featured-card:hover {
+    transform: scale(1.05) translateY(-8px);
+}
+
+
+/* =========================
+   Badge
+========================= */
+
+.badge {
+    align-self: flex-start;
+
+    margin-bottom: 15px;
+    padding: 6px 10px;
+
+    background-color: #3e556e;
+    color: white;
+
+    border-radius: 20px;
+
+    font-size: 11px;
+    font-weight: bold;
+}
+
+
+/* =========================
+   Plan
+========================= */
+
+.plan {
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+
+/* =========================
+   Price
+========================= */
+
+.price {
+    margin-bottom: 15px;
+
+    font-size: 32px;
+    font-weight: bold;
+}
+
+
+/* =========================
+   Description
+========================= */
+
+.description {
+    min-height: 45px;
+
+    margin-bottom: 25px;
+
+    color: #607d8b;
+    line-height: 1.5;
+}
+
+
+/* =========================
+   Features
+========================= */
+
+.feature-list {
+    list-style: none;
+
+    margin-bottom: 30px;
+}
+
+.feature-list li {
+    margin-bottom: 12px;
+}
+
+.feature-list span {
+    margin-right: 8px;
+}
+
+
+/* =========================
+   Button
+========================= */
+
+.card button {
+    width: 100%;
+    margin-top: auto;
+
+    padding: 12px;
+
+    border: none;
+    border-radius: 7px;
+
+    background-color: #3e556e;
+    color: white;
+
+    font-size: 15px;
+    cursor: pointer;
+
+    transition: background-color 0.3s ease;
+}
+
+.card button:hover {
+    background-color: #6499a2;
+}
+
+
+/* =========================
+   Responsive
+========================= */
+
+@media (max-width: 900px) {
+
+    #pricing-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: min(100%, 400px);
+    }
+
+    .featured-card {
+        transform: none;
+    }
+
+    .featured-card:hover {
+        transform: translateY(-8px);
+    }
+}
+
+
+/* =========================
+   Dark Mode
+========================= */
+
+@media (prefers-color-scheme: dark) {
+
+    body {
+        background-color: #121212;
+        color: #f5f5f5;
+    }
+
+    main > p {
+        color: #b0bec5;
+    }
+
+    .card {
+        background-color: #1e1e1e;
+        border-color: #333;
+    }
+
+    .description {
+        color: #b0bec5;
+    }
+
+    header {
+        background-color: #0d0d0d;
+    }
+
+    button{
+        background-color: #121212;
+        color: #f5f5f5;
+    }
+}
+

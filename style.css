@@ -131,7 +131,7 @@ nav ul a {
 .section-heading h2 {
     font-size: clamp(20px, 6vw, 40px);
 
-    letter-spacing: -4px;
+    letter-spacing: -1px;
 }
 
 
