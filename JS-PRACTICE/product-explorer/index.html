@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Product Explorer</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/app.js" defer></script>
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+
+        <a href="#home" id="logo">
+            Product <span>Explorer</span>
+        </a>
+
+        <nav class="nav-links" aria-label="Main navigation">
+            <ul>
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+
+                <li>
+                    <a href="#products">Products</a>
+                </li>
+
+                <li>
+                    <a href="#favourites">Favourites</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Home View -->
+        <section id="home">
+
+            <h1>Discover Products</h1>
+
+            <p>
+                Browse products, search for what you need,
+                and save your favourites.
+            </p>
+
+            <a href="#products">Browse Products</a>
+
+        </section>
+
+
+        <!-- Products View -->
+        <section id="products">
+
+            <h2>Products</h2>
+
+            <div class="product-controls">
+            <!-- Search -->
+            <search>
+
+                <form>
+
+                    <label for="search">
+                        Search products
+                    </label>
+
+                    <input id="search" name="search" type="search" placeholder="Search products...">
+
+                    <button type="submit">
+                        Search
+                    </button>
+
+                </form>
+
+            </search>
+
+
+            <!-- Category Filter -->
+            <div class="category-filter">
+
+                <label for="category">
+                    Category
+                </label>
+
+                <select id="category" name="category">
+
+                    <option value="all">
+                        All Categories
+                    </option>
+
+                    <option value="beauty">
+                        Beauty
+                    </option>
+
+                    <option value="furniture">
+                        Furniture
+                    </option>
+
+                    <option value="groceries">
+                        Groceries
+                    </option>
+
+                </select>
+
+            </div>
+            </div>
+
+
+            <!-- Product List -->
+            <ul class="product-list">
+
+                <li>
+
+                    <article>
+
+                        <img class="product-image" src="https://via.placeholder.com/300" alt="">
+
+                        <h3 class="product-name">
+                            
+                        </h3>
+
+                        <p class="description">
+                            
+                        </p>
+
+                        <p class="price">
+                            
+                        </p>
+
+                        <button type="button" class="fav-button">
+                             Add to favourites
+                        </button>
+
+                    </article>
+
+                </li>
+
+            </ul>
+
+
+            <!-- Feedback Form -->
+            <section class="feedback">
+
+                <h2>Product Feedback</h2>
+
+                <form class="feedback-form" method="get">
+
+                    <label for="name">
+                        Name
+                    </label>
+
+                    <input type="text" name="name" id="name">
+
+
+                    <label for="email">
+                        Email
+                    </label>
+
+                    <input type="email" name="email" id="email">
+
+
+                    <label for="rating">
+                        Rating
+                    </label>
+
+                    <select id="rating" name="rating">
+
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+
+                    </select>
+
+
+                    <label for="msg">
+                        Your feedback
+                    </label>
+
+                    <textarea id="msg" name="msg"></textarea><br>
+
+
+                    <button type="submit">
+                        Submit Feedback
+                    </button><br>
+
+                </form>
+
+            </section>
+
+        </section>
+
+
+        <!-- Favourites View -->
+        <section id="favourites">
+
+            <h2>My Favourites</h2>
+
+            <p>
+                Your favourite products will appear here.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            &copy; 2026 Product Explorer.
+            All rights reserved.
+        </p>
+
+    </footer>
+
+</body>
+
+</html>

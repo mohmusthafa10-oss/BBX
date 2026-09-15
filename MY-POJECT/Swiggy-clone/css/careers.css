@@ -1,0 +1,1191 @@
+/* =====================================
+   RESET
+===================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #fff;
+    color: #282c3f;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+button,
+input,
+select {
+    font-family: inherit;
+}
+
+
+/* =====================================
+   CONTAINER
+===================================== */
+
+.container {
+    width: 90%;
+    max-width: 1350px;
+    margin: auto;
+}
+
+
+/* =====================================
+   HEADER
+===================================== */
+
+header {
+    width: 100%;
+    height: 96px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+
+    background: #fff;
+
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.navbar {
+    width: 90%;
+    max-width: 1350px;
+    height: 96px;
+
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* LOGO */
+
+.logo {
+    flex-shrink: 0;
+}
+
+.logo img {
+    width: 145px;
+}
+
+
+/* NAVIGATION */
+
+.nav-links ul {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    display: block;
+
+    padding: 38px 0 34px;
+
+    color: #222;
+
+    font-size: 15px;
+    font-weight: 400;
+
+    transition: 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #ff5200;
+}
+
+.nav-links a.active::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 27px;
+
+    height: 2px;
+
+    background: #ff5200;
+}
+
+
+/* =====================================
+   SOCIAL ICONS
+===================================== */
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #222;
+}
+
+.social-icons i {
+    font-size: 21px;
+}
+
+.social-icons a:hover {
+    color: #ff5200;
+}
+
+
+/* =====================================
+   MOBILE MENU
+===================================== */
+
+#menu-toggle {
+    display: none;
+}
+
+.menu-btn {
+    display: none;
+
+    width: 30px;
+
+    cursor: pointer;
+}
+
+.menu-btn span {
+    display: block;
+
+    width: 30px;
+    height: 3px;
+
+    margin: 5px 0;
+
+    background: #222;
+
+    transition: 0.3s ease;
+}
+
+
+/* =====================================
+   HERO
+===================================== */
+
+.hero {
+    position: relative;
+
+    width: 100%;
+    height: 380px;
+
+    margin-top: 96px;
+
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+}
+
+.hero::after {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.18);
+}
+
+.hero-content {
+    position: absolute;
+
+    top: 145px;
+    left: 0;
+
+    width: 100%;
+
+    text-align: center;
+
+    z-index: 2;
+}
+
+.hero-content h1 {
+    color: #fff;
+
+    font-size: 48px;
+    font-weight: 300;
+
+    letter-spacing: 2px;
+}
+
+
+/* =====================================
+   SEARCH
+===================================== */
+
+.search-section {
+    width: 100%;
+
+    padding: 45px 0 40px;
+
+    background: #fff;
+}
+
+.search-box {
+    width: 84%;
+    max-width: 1365px;
+
+    min-height: 118px;
+
+    margin: auto;
+    padding: 32px 60px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 20px;
+
+    background: #f3f3f3;
+
+    border-radius: 65px;
+}
+
+.search-box input,
+.search-box select {
+    height: 52px;
+
+    padding: 0 20px;
+
+    border: 1px solid #ddd;
+    outline: none;
+
+    background: #fff;
+
+    border-radius: 30px;
+
+    color: #666;
+
+    font-size: 15px;
+}
+
+.search-box input {
+    flex: 1.25;
+}
+
+.search-box select {
+    flex: 1;
+}
+
+.search-box input::placeholder {
+    color: #999;
+}
+
+.search-box input:focus,
+.search-box select:focus {
+    border-color: #ff5200;
+}
+
+.search-box button {
+    width: 180px;
+    height: 52px;
+
+    flex-shrink: 0;
+
+    border: none;
+    border-radius: 30px;
+
+    background: #ff5200;
+
+    color: #fff;
+
+    font-size: 15px;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.search-box button:hover {
+    background: #e94b00;
+}
+
+
+/* =====================================
+   JOBS
+===================================== */
+
+.jobs-section {
+    width: 100%;
+
+    padding: 35px 0 55px;
+
+    background: #fff;
+}
+
+.jobs-header {
+    width: 90%;
+    max-width: 1200px;
+
+    margin: 0 auto 45px;
+
+    text-align: center;
+}
+
+.jobs-header h2 {
+    color: #111;
+
+    font-size: 42px;
+    font-weight: 300;
+
+    line-height: 1.2;
+}
+
+.jobs-header p {
+    margin-top: 5px;
+
+    color: #222;
+
+    font-size: 21px;
+    font-weight: 300;
+}
+
+
+/* TABLE SEARCH */
+
+.table-search {
+    width: 80%;
+    max-width: 1120px;
+
+    margin: 0 auto 17px;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.job-count-btn {
+    height: 38px;
+
+    padding: 0 15px;
+
+    border: none;
+
+    background: #ff8a00;
+
+    color: #fff;
+
+    font-size: 13px;
+
+    cursor: pointer;
+}
+
+.table-search input {
+    width: 350px;
+    height: 38px;
+
+    padding: 0 15px;
+
+    border: 1px solid #ddd;
+
+    outline: none;
+
+    font-size: 13px;
+}
+
+
+/* TABLE */
+
+.jobs-table {
+    width: 80%;
+    max-width: 1200px;
+
+    margin: auto;
+
+    overflow-x: auto;
+}
+
+.jobs-table table {
+    width: 100%;
+
+    border-collapse: collapse;
+}
+
+.jobs-table thead {
+    background: #b3b3b3;
+
+    color: #fff;
+}
+
+.jobs-table th {
+    padding: 17px 25px;
+
+    text-align: left;
+
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.jobs-table td {
+    padding: 16px 25px;
+
+    border-bottom: 1px solid #ddd;
+
+    color: #555;
+
+    font-size: 15px;
+}
+
+.jobs-table tbody tr:hover {
+    background: #fff8f4;
+}
+
+
+/* =====================================
+   PAGINATION
+===================================== */
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 28px 0 0;
+}
+
+.pagination a {
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid #ddd;
+    border-right: none;
+
+    background: #fff;
+
+    color: #222;
+
+    font-size: 14px;
+}
+
+.pagination a:first-child {
+    border-radius: 5px 0 0 5px;
+}
+
+.pagination a:last-child {
+    border-right: 1px solid #ddd;
+    border-radius: 0 5px 5px 0;
+}
+
+.pagination a:hover {
+    background: #f5f5f5;
+}
+
+.pagination a.active {
+    background: #ff7a00;
+    border-color: #ff7a00;
+
+    color: #fff;
+}
+
+
+/* =====================================
+   HOW WE HIRE
+===================================== */
+
+.hire-section {
+    width: 100%;
+
+    padding: 55px 0 60px;
+
+    background: #f1f1f1;
+}
+
+.hire-section .container {
+    text-align: center;
+}
+
+.hire-section h2 {
+    margin-bottom: 25px;
+
+    color: #282c3f;
+
+    font-size: 36px;
+    font-weight: 300;
+}
+
+.hire-description {
+    width: 75%;
+    max-width: 1100px;
+
+    margin: 0 auto 35px;
+
+    color: #282c3f;
+
+    font-size: 16px;
+    font-weight: 300;
+
+    line-height: 1.7;
+}
+
+.hire-section h3 {
+    margin-bottom: 55px;
+
+    color: #282c3f;
+
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.hire-section h3 span {
+    font-weight: 600;
+}
+
+
+/* HIRING STEPS */
+
+.hire-steps {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: repeat(5, 1fr);
+
+    gap: 20px;
+}
+
+.step {
+    padding: 0 10px;
+
+    text-align: center;
+}
+
+.step-icon {
+    width: 65px;
+    height: 65px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #ff8a00;
+}
+
+.step-icon img {
+    width: 42px;
+    height: 42px;
+
+    object-fit: contain;
+}
+
+.step h4 {
+    margin-bottom: 15px;
+
+    color: #282c3f;
+
+    font-size: 23px;
+    font-weight: 300;
+}
+
+.step p {
+    color: #282c3f;
+
+    font-size: 15px;
+    font-weight: 300;
+
+    line-height: 1.6;
+}
+
+
+/* =====================================
+   GALLERY
+===================================== */
+
+.gallery-section {
+    width: 100%;
+
+    padding: 0;
+
+    background: #fff;
+}
+
+.gallery-container {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 0;
+}
+
+.gallery-item {
+    width: 100%;
+    height: 420px;
+
+    overflow: hidden;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform 0.4s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05);
+}
+
+
+/* =====================================
+   FOOTER
+===================================== */
+
+footer {
+    width: 100%;
+
+    padding: 45px 20px 30px;
+
+    background: #5035b9;
+
+    color: #fff;
+
+    text-align: center;
+}
+
+.footer-container {
+    width: 100%;
+    max-width: 1350px;
+
+    margin: auto;
+}
+
+
+/* FOOTER LINKS */
+
+.footer-links {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 35px;
+
+    margin-bottom: 28px;
+}
+
+.footer-links li {
+    display: inline-block;
+}
+
+.footer-links a {
+    color: #fff;
+
+    font-size: 14px;
+
+    transition: 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #ff5200;
+}
+
+
+/* FOOTER SOCIAL */
+
+.footer-social {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 25px;
+
+    margin-bottom: 25px;
+}
+
+.footer-social a {
+    color: #fff;
+}
+
+.footer-social i {
+    color: #fff;
+
+    font-size: 32px;
+
+    transition: 0.3s ease;
+}
+
+.footer-social i:hover {
+    color: #ff5200;
+
+    transform: scale(1.15);
+}
+
+
+/* COPYRIGHT */
+
+.copyright {
+    color: #fff;
+
+    font-size: 13px;
+}
+
+
+/* =====================================
+   TABLET
+===================================== */
+
+@media (max-width: 1100px) {
+
+    .nav-links ul {
+        gap: 18px;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+    }
+
+    .social-icons {
+        gap: 14px;
+    }
+
+    .search-box {
+        width: 90%;
+        padding: 25px 35px;
+        gap: 15px;
+    }
+
+    .search-box button {
+        width: 140px;
+    }
+
+    .jobs-table {
+        width: 90%;
+    }
+
+    .table-search {
+        width: 90%;
+    }
+
+    .hire-steps {
+        gap: 10px;
+    }
+
+    .step h4 {
+        font-size: 20px;
+    }
+
+    .step p {
+        font-size: 14px;
+    }
+}
+
+
+/* =====================================
+   MOBILE
+===================================== */
+
+@media (max-width: 768px) {
+
+    /* HEADER */
+
+    header {
+        height: 75px;
+    }
+
+    .navbar {
+        width: 90%;
+        height: 75px;
+
+        position: relative;
+    }
+
+    .logo img {
+        width: 120px;
+    }
+
+    .social-icons {
+        display: none;
+    }
+
+
+    /* HAMBURGER */
+
+    .menu-btn {
+        display: block;
+
+        position: absolute;
+
+        top: 19px;
+        right: 0;
+    }
+
+
+    /* MOBILE NAV */
+
+    .nav-links {
+        display: none;
+
+        position: absolute;
+
+        top: 75px;
+        left: 0;
+
+        width: 100%;
+
+        padding: 20px 0;
+
+        background: #fff;
+
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+
+        gap: 18px;
+    }
+
+    .nav-links a {
+        padding: 0;
+
+        font-size: 15px;
+    }
+
+    .nav-links a.active::after {
+        bottom: -6px;
+    }
+
+    #menu-toggle:checked ~ .nav-links {
+        display: block;
+    }
+
+
+    /* HAMBURGER ANIMATION */
+
+    #menu-toggle:checked + .menu-btn span:nth-child(1) {
+        transform: rotate(45deg) translate(6px, 6px);
+    }
+
+    #menu-toggle:checked + .menu-btn span:nth-child(2) {
+        opacity: 0;
+    }
+
+    #menu-toggle:checked + .menu-btn span:nth-child(3) {
+        transform: rotate(-45deg) translate(6px, -6px);
+    }
+
+
+    /* HERO */
+
+    .hero {
+        height: 330px;
+
+        margin-top: 75px;
+    }
+
+    .hero-content {
+        top: 105px;
+    }
+
+    .hero-content h1 {
+        font-size: 32px;
+    }
+
+
+    /* SEARCH */
+
+    .search-section {
+        padding: 30px 0;
+    }
+
+    .search-box {
+        width: 90%;
+
+        height: auto;
+
+        padding: 20px;
+
+        flex-direction: column;
+
+        gap: 12px;
+
+        border-radius: 25px;
+    }
+
+    .search-box input,
+    .search-box select,
+    .search-box button {
+        width: 100%;
+
+        height: 48px;
+
+        flex: none;
+    }
+
+
+    /* JOBS */
+
+    .jobs-section {
+        padding: 40px 0 50px;
+    }
+
+    .jobs-header {
+        margin-bottom: 30px;
+    }
+
+    .jobs-header h2 {
+        font-size: 34px;
+    }
+
+    .jobs-header p {
+        font-size: 18px;
+    }
+
+    .table-search {
+        width: 90%;
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 8px;
+    }
+
+    .job-count-btn,
+    .table-search input {
+        width: 100%;
+    }
+
+    .jobs-table {
+        width: 95%;
+
+        overflow-x: auto;
+    }
+
+    .jobs-table table {
+        min-width: 700px;
+    }
+
+    .jobs-table th,
+    .jobs-table td {
+        padding: 13px 12px;
+
+        font-size: 13px;
+    }
+
+
+    /* PAGINATION */
+
+    .pagination {
+        margin-top: 25px;
+    }
+
+
+    /* HOW WE HIRE */
+
+    .hire-section {
+        padding: 50px 0;
+    }
+
+    .hire-section h2 {
+        font-size: 30px;
+    }
+
+    .hire-description {
+        width: 90%;
+
+        font-size: 14px;
+    }
+
+    .hire-section h3 {
+        margin-bottom: 40px;
+
+        font-size: 21px;
+    }
+
+    .hire-steps {
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+    }
+
+    .step {
+        max-width: 400px;
+
+        margin: auto;
+    }
+
+
+    /* =================================
+       GALLERY MOBILE
+    ================================= */
+
+    .gallery-container {
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-item {
+        width: 100%;
+        height: 300px;
+    }
+
+
+    /* =================================
+       FOOTER MOBILE
+    ================================= */
+
+    footer {
+        padding: 40px 20px 25px;
+
+        background: #5035b9;
+    }
+
+    .footer-links {
+        flex-direction: column;
+
+        gap: 15px;
+
+        margin-bottom: 28px;
+    }
+
+    .footer-links a {
+        font-size: 14px;
+    }
+
+    .footer-social {
+        gap: 25px;
+    }
+
+    .footer-social i {
+        font-size: 28px;
+    }
+
+    .copyright {
+        font-size: 12px;
+    }
+}
+
+
+/* =====================================
+   SMALL MOBILE
+===================================== */
+
+@media (max-width: 480px) {
+
+    .logo img {
+        width: 110px;
+    }
+
+    .hero {
+        height: 300px;
+    }
+
+    .hero-content {
+        top: 90px;
+    }
+
+    .hero-content h1 {
+        font-size: 27px;
+    }
+
+    .search-box {
+        width: 92%;
+        padding: 18px;
+    }
+
+    .jobs-header h2 {
+        font-size: 29px;
+    }
+
+    .jobs-header p {
+        font-size: 16px;
+    }
+
+    .hire-section h2 {
+        font-size: 26px;
+    }
+
+    .hire-section h3 {
+        font-size: 19px;
+    }
+
+    .step h4 {
+        font-size: 21px;
+    }
+
+    .step p {
+        font-size: 14px;
+    }
+
+
+    /* GALLERY */
+
+    .gallery-container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-item {
+        height: 250px;
+    }
+
+
+    /* FOOTER */
+
+    footer {
+        padding: 35px 15px 25px;
+
+        background: #5035b9;
+    }
+
+    .footer-links {
+        flex-direction: column;
+
+        gap: 13px;
+    }
+
+    .footer-social i {
+        font-size: 28px;
+    }
+}
