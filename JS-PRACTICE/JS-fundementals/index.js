@@ -75,8 +75,7 @@ console.log(arr);
 // [1, 2, 3, 4]
 
 // Why is this allowed?
-// const prevents reassignment of the variable,
-// but it does not make the array itself immutable.
+// const prevents reassignment of the variable,but it does not make the array itself immutable.
 
 
 // 7. Shallow copy
@@ -93,8 +92,7 @@ console.log(a.x.y);
 // 99
 
 // Why?
-// Spread creates a shallow copy.
-// The nested object x is still shared by both a and b.
+// Spread creates a shallow copy.The nested object x is still shared by both a and b.
 
 
 // 8. Array sort()
