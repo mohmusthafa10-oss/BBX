@@ -1095,3 +1095,730 @@ input {
 
     display: block;
 }
+
+/* =========================================================
+   RESPONSIVE LAYOUT
+   Added breakpoints for laptop, tablet, and mobile screens
+   ========================================================= */
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: clip;
+}
+
+img {
+    max-width: 100%;
+}
+
+input,
+button {
+    max-width: 100%;
+}
+
+/* Laptop and smaller desktop */
+@media (max-width: 1200px) {
+    .navbar {
+        min-height: 84px;
+        padding: 22px 32px;
+    }
+
+    .logo img {
+        width: 145px;
+    }
+
+    .nav-links {
+        gap: 20px;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+    }
+
+    .nav-links li:nth-child(3) a,
+    .sign-in-button {
+        padding: 13px 20px;
+        font-size: 14px;
+    }
+
+    .hero {
+        min-height: 720px;
+    }
+
+    .hero-left-image img,
+    .hero-right-image img {
+        width: 190px;
+        height: 360px;
+        object-fit: contain;
+    }
+
+    .service-cards {
+        gap: 28px;
+    }
+
+    .service-card {
+        min-height: 300px;
+        padding: 30px 24px;
+    }
+
+    .service-content h2 {
+        font-size: 27px;
+    }
+
+    .service-content p {
+        font-size: 18px;
+    }
+
+    .service-card img {
+        width: 210px;
+        height: 210px;
+    }
+
+    .footer-content {
+        gap: 28px;
+    }
+
+    .footer-bottom p {
+        font-size: 20px;
+    }
+
+    .app-links img {
+        width: 175px;
+    }
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+    .navbar {
+        min-height: 76px;
+        padding: 18px 24px;
+        gap: 20px;
+    }
+
+    .logo img {
+        width: 125px;
+    }
+
+    .nav-links {
+        gap: 14px;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+    }
+
+    .nav-links li:nth-child(3) a,
+    .sign-in-button {
+        padding: 11px 14px;
+        border-radius: 12px;
+        font-size: 12px;
+    }
+
+    .hero {
+        min-height: 680px;
+        padding-top: 75px;
+        padding-bottom: 45px;
+    }
+
+    .hero-content h1 {
+        font-size: clamp(32px, 5vw, 44px);
+        padding: 0 18px;
+    }
+
+    .hero-left-image {
+        top: 90px;
+    }
+
+    .hero-right-image {
+        top: 90px;
+    }
+
+    .hero-left-image img,
+    .hero-right-image img {
+        width: 135px;
+        height: 300px;
+        object-fit: contain;
+    }
+
+    .search-container {
+        width: min(92%, 700px);
+        margin: 0 auto;
+        gap: 12px;
+    }
+
+    .location-search {
+        width: 40%;
+    }
+
+    .food-search {
+        width: 60%;
+    }
+
+    .location-search,
+    .food-search {
+        height: 58px;
+    }
+
+    .location-search input,
+    .food-search input {
+        font-size: 13px;
+    }
+
+    .service-cards {
+        width: calc(100% - 40px);
+        gap: 18px;
+        margin-top: 50px;
+    }
+
+    .service-card {
+        min-height: 260px;
+        padding: 24px 18px;
+        border-radius: 24px;
+    }
+
+    .service-content h2 {
+        font-size: 22px;
+    }
+
+    .service-content p {
+        font-size: 15px;
+    }
+
+    .service-content span {
+        font-size: 14px;
+        margin-bottom: 75px;
+    }
+
+    .service-content a {
+        padding: 11px 20px;
+        font-size: 13px;
+    }
+
+    .service-card img {
+        width: 165px;
+        height: 165px;
+    }
+
+    .food-categories,
+    .grocery-section,
+    .restaurant-section,
+    .city-section {
+        width: calc(100% - 40px);
+    }
+
+    .food-categories .section-header h2,
+    .grocery-section .section-header h2,
+    .restaurant-section .section-header h2,
+    .city-section h2 {
+        font-size: 24px;
+    }
+
+    .category-list,
+    .grocery-list,
+    .restaurant-list {
+        overflow-x: auto;
+        overflow-y: hidden;
+        scroll-snap-type: x proximity;
+        scrollbar-width: none;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 8px;
+    }
+
+    .category-list::-webkit-scrollbar,
+    .grocery-list::-webkit-scrollbar,
+    .restaurant-list::-webkit-scrollbar {
+        display: none;
+    }
+
+    .category-item,
+    .grocery-item,
+    .restaurant-card {
+        scroll-snap-align: start;
+    }
+
+    .category-item {
+        flex-basis: 105px;
+    }
+
+    .category-item img {
+        width: 105px;
+        height: 105px;
+    }
+
+    .grocery-item {
+        flex-basis: 135px;
+    }
+
+    .grocery-item img {
+        width: 135px;
+        height: 135px;
+    }
+
+    .restaurant-card {
+        flex-basis: 310px;
+    }
+
+    .restaurant-card > img {
+        height: 185px;
+    }
+
+    .city-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .footer-content {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 35px 25px;
+    }
+
+    .footer-bottom {
+        width: calc(100% - 48px);
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .footer-bottom p {
+        font-size: 20px;
+        line-height: 1.4;
+    }
+}
+
+/* Mobile phones */
+@media (max-width: 600px) {
+    .navbar {
+        min-height: 70px;
+        padding: 14px 18px;
+        flex-wrap: wrap;
+    }
+
+    .logo img {
+        width: 118px;
+    }
+
+    .navbar nav {
+        width: 100%;
+    }
+
+    .nav-links {
+        width: 100%;
+        gap: 10px;
+        justify-content: flex-end;
+    }
+
+    .nav-links li:first-child,
+    .nav-links li:nth-child(2) {
+        display: none;
+    }
+
+    .nav-links a {
+        font-size: 12px;
+    }
+
+    .nav-links li:nth-child(3) a,
+    .sign-in-button {
+        padding: 10px 13px;
+        border-radius: 10px;
+        font-size: 12px;
+    }
+
+    .hero {
+        min-height: auto;
+        padding: 48px 0 32px;
+    }
+
+    .hero-content {
+        padding: 0 16px;
+    }
+
+    .hero-content h1 {
+        font-size: clamp(29px, 8vw, 38px);
+        line-height: 1.15;
+        margin-bottom: 24px;
+        padding: 0;
+    }
+
+    .hero-left-image,
+    .hero-right-image {
+        top: 8px;
+        opacity: 0.28;
+    }
+
+    .hero-left-image {
+        left: -55px;
+    }
+
+    .hero-right-image {
+        right: -55px;
+    }
+
+    .hero-left-image img,
+    .hero-right-image img {
+        width: 115px;
+        height: 180px;
+    }
+
+    .search-container {
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+    }
+
+    .location-search,
+    .food-search {
+        width: 100%;
+        height: 54px;
+        border-radius: 12px;
+    }
+
+    .location-search span {
+        padding-left: 14px;
+        font-size: 17px;
+    }
+
+    .location-search input {
+        padding: 0 9px;
+    }
+
+    .food-search input {
+        padding: 0 14px;
+    }
+
+    .location-search input,
+    .food-search input {
+        font-size: 13px;
+    }
+
+    .location-search button,
+    .food-search button {
+        padding: 0 14px;
+        font-size: 16px;
+    }
+
+    .service-cards {
+        width: calc(100% - 32px);
+        grid-template-columns: 1fr;
+        gap: 16px;
+        margin-top: 28px;
+    }
+
+    .service-card {
+        min-height: 230px;
+        padding: 22px 18px;
+        border-radius: 22px;
+    }
+
+    .service-content h2 {
+        font-size: clamp(21px, 6vw, 26px);
+    }
+
+    .service-content p {
+        font-size: 15px;
+    }
+
+    .service-content span {
+        font-size: 13px;
+        margin-bottom: 52px;
+    }
+
+    .service-content a {
+        padding: 10px 18px;
+        font-size: 13px;
+    }
+
+    .service-card img {
+        width: 175px;
+        height: 175px;
+        max-width: 55%;
+    }
+
+    .food-categories,
+    .grocery-section,
+    .restaurant-section,
+    .city-section {
+        width: calc(100% - 32px);
+    }
+
+    .food-categories {
+        margin-top: 38px;
+        padding-bottom: 32px;
+    }
+
+    .grocery-section {
+        margin-top: 20px;
+        padding-bottom: 38px;
+    }
+
+    .food-categories .section-header,
+    .grocery-section .section-header,
+    .restaurant-section .section-header {
+        align-items: flex-start;
+        gap: 12px;
+        margin-bottom: 20px;
+    }
+
+    .food-categories .section-header h2,
+    .grocery-section .section-header h2,
+    .restaurant-section .section-header h2,
+    .city-section h2 {
+        font-size: 21px;
+        line-height: 1.3;
+    }
+
+    .slider-buttons {
+        flex-shrink: 0;
+        gap: 6px !important;
+    }
+
+    .food-categories .slider-buttons button,
+    .grocery-section .slider-buttons button,
+    .restaurant-section .slider-buttons button {
+        width: 30px;
+        height: 30px;
+        font-size: 15px;
+    }
+
+    .category-list,
+    .grocery-list,
+    .restaurant-list {
+        gap: 14px;
+        overflow-x: auto;
+        overflow-y: hidden;
+        scrollbar-width: none;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .category-item {
+        flex-basis: 88px;
+    }
+
+    .category-item img {
+        width: 88px;
+        height: 88px;
+        margin-bottom: 8px;
+    }
+
+    .category-item p {
+        font-size: 13px;
+        white-space: normal;
+    }
+
+    .grocery-item {
+        flex-basis: 112px;
+    }
+
+    .grocery-item img {
+        width: 112px;
+        height: 112px;
+        margin-bottom: 8px;
+    }
+
+    .grocery-item p {
+        font-size: 13px;
+        line-height: 1.35;
+        white-space: normal;
+    }
+
+    .restaurant-section {
+        margin-bottom: 42px;
+    }
+
+    .restaurant-card {
+        flex-basis: min(82vw, 320px);
+        border-radius: 14px;
+    }
+
+    .restaurant-card > img {
+        height: 175px;
+    }
+
+    .restaurant-info {
+        padding: 12px;
+    }
+
+    .restaurant-title {
+        margin-top: -42px;
+        margin-bottom: 24px;
+        gap: 8px;
+    }
+
+    .restaurant-title h3 {
+        min-width: 0;
+        font-size: 15px;
+    }
+
+    .restaurant-title span {
+        font-size: 13px;
+    }
+
+    .restaurant-details p,
+    .restaurant-location p {
+        font-size: 12px;
+    }
+
+    .restaurant-offer {
+        min-height: 40px;
+        padding: 0 9px;
+        gap: 6px;
+        font-size: 11px;
+    }
+
+    .restaurant-offer strong {
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .restaurant-bank-offer {
+        padding: 9px;
+        font-size: 12px;
+    }
+
+    .restaurant-cashback {
+        font-size: 12px;
+        line-height: 1.4;
+    }
+
+    .app-banner {
+        width: calc(100% - 32px);
+        margin: 0 auto 42px;
+        border-radius: 12px;
+    }
+
+    .city-section {
+        margin-bottom: 42px;
+    }
+
+    .city-section h2 {
+        margin-bottom: 18px;
+    }
+
+    .city-list {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .city-list a,
+    .city-list button {
+        min-height: 56px;
+        padding: 10px;
+        font-size: 12px;
+        line-height: 1.35;
+        overflow-wrap: anywhere;
+    }
+
+    .footer {
+        padding: 38px 0 24px;
+    }
+
+    .footer-content {
+        width: calc(100% - 36px);
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 30px 20px;
+    }
+
+    .footer-brand {
+        grid-column: 1 / -1;
+    }
+
+    .footer-brand img {
+        width: 145px;
+    }
+
+    .footer-brand p,
+    .footer-column a {
+        font-size: 13px;
+    }
+
+    .footer-column h3 {
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+
+    .footer-column a {
+        margin-bottom: 13px;
+        overflow-wrap: anywhere;
+    }
+
+    .footer-column h3:not(:first-child) {
+        margin-top: 18px;
+    }
+
+    .social-links {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .footer-bottom {
+        width: calc(100% - 36px);
+        margin-top: 32px;
+        padding-top: 24px;
+    }
+
+    .footer-bottom p {
+        font-size: 17px;
+    }
+
+    .app-links {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 14px;
+    }
+
+    .app-links a {
+        max-width: 45%;
+    }
+
+    .app-links img {
+        width: 100%;
+    }
+}
+
+/* Very small phones */
+@media (max-width: 380px) {
+    .navbar {
+        padding: 12px;
+    }
+
+    .logo img {
+        width: 105px;
+    }
+
+    .nav-links {
+        gap: 7px;
+    }
+
+    .nav-links li:nth-child(3) a,
+    .sign-in-button {
+        padding: 9px 10px;
+        font-size: 11px;
+    }
+
+    .hero-content h1 {
+        font-size: 28px;
+    }
+
+    .service-card {
+        min-height: 215px;
+        padding: 18px 14px;
+    }
+
+    .service-content h2 {
+        font-size: 20px;
+    }
+
+    .service-card img {
+        width: 145px;
+        height: 145px;
+    }
+
+    .city-list {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-content {
+        gap: 26px 14px;
+    }
+}
