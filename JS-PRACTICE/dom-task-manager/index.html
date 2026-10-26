@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DOM Task Manager</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+    </head>
+
+    <body>
+        <header>
+            <h1>Task Manager</h1>
+            <p>Manage your tasks with Vanilla JavaScript</p>
+        </header>
+
+        <main>
+            <!-- Add task -->
+            <section>
+                <h2>Add a Task</h2>
+
+                <form id="task-form">
+                    <label for="task-title">Task title</label>
+                    <input type="text" id="task-title" placeholder="Enter a task..." required>
+                    <button type="submit">Add Task</button>
+                </form>
+            </section>
+
+            <!-- Search tasks -->
+            <section>
+                <h2>Your Tasks</h2>
+
+                <label for="search-input">Search tasks</label>
+                <input type="search" id="search-input" placeholder="Search as you type...">
+
+                <!-- Loading, empty and error states -->
+                <p id="loading-message" role="status" hidden>
+                    Loading tasks...
+                </p>
+
+                <p id="empty-message" role="status" hidden>
+                    No tasks found.
+                </p>
+
+                <p id="error-message" role="alert" hidden></p>
+
+                <!-- Event delegation: one click listener in JavaScript -->
+                <ul id="task-list" aria-label="Task list"></ul>
+            </section>
+
+            <!-- Performance benchmark -->
+            <section>
+                <h2>Performance Test</h2>
+                <p>Compare rendering 5,000 items using a loop and DocumentFragment.</p>
+
+                <button type="button" id="benchmark-loop">
+                    Test Normal Loop
+                </button>
+
+                <button type="button" id="benchmark-fragment">
+                    Test DocumentFragment
+                </button>
+
+                <p id="benchmark-result" role="status" aria-live="polite"></p>
+
+                <div id="benchmark-container"></div>
+            </section>
+        </main>
+
+        <footer>
+            <p>DOM Task Manager — Vanilla JavaScript</p>
+        </footer>
+    </body>
+
+    </html>

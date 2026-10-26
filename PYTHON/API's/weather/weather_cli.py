@@ -1,6 +1,7 @@
+import os
 import requests as req
 from dotenv import load_dotenv
-import os
+
 
 
 city = input('Enter the city name: ')

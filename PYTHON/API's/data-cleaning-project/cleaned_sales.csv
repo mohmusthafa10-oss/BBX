@@ -1,0 +1,16 @@
+order_id,customer_id,customer_name,age,city,order_date,amount,category,age_was_missing
+101,C01,Aisha,25.0,Kannur,2026-01-10,1200,Electronics,False
+102,C02,Rahul,32.0,Kozhikode,2026-01-12,850,Clothing,False
+103,C03,Neha,31.0,Kannur,2026-01-15,1500,Electronics,True
+104,C04,Arun,45.0,Thrissur,2026-01-18,700,Clothing,False
+105,C05,Meera,29.0,Kannur,2026-01-20,900,Food,False
+106,C06,John,31.0,Kochi,2026-01-22,200000,Electronics,False
+107,C07,Sara,35.0,Kozhikode,2026-02-01,1100,Clothing,False
+108,C08,Ali,28.0,Kannur,2026-02-05,950,Food,False
+109,C09,Riya,31.0,Kochi,,1300,Electronics,False
+110,C10,David,31.0,Kannur,2026-02-10,800,Clothing,True
+111,C11,Fathima,27.0,Kochi,2026-02-12,1025,Food,False
+112,C12,Sam,42.0,Kannur,2026-02-15,50000,Electronics,False
+113,C13,Anu,31.0,Thrissur,2026-02-18,1000,Food,True
+114,C14,Tom,38.0,Kochi,2026-02-20,1050,Clothing,False
+115,C15,Liya,24.0,Kannur,2026-02-22,900,Food,False

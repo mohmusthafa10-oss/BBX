@@ -1,0 +1,18 @@
+
+order_id,customer_id,customer_name,age,city,order_date,amount,category
+101,C01,Aisha,25,Kannur,2026-01-10,₹1200,Electronics
+102,C02,Rahul,32,kozhikode,2026-01-12,₹850,Clothing
+103,C03,Neha,,Kannur,2026-01-15,₹1500,Electronics
+104,C04,Arun,45,THRISSUR,2026-01-18,₹700,Clothing
+105,C05,Meera,29,Kannur,2026-01-20,₹900,Food
+106,C06,John,150,Kochi,2026-01-22,₹200000,Electronics
+107,C07,Sara,35,Kozhikode,2026-02-01,₹1100,Clothing
+107,C07,Sara,35,Kozhikode,2026-02-01,₹1100,Clothing
+108,C08,Ali,28,Kannur,2026-02-05,₹950,Food
+109,C09,Riya,31,Kochi,2026-02-30,₹1300,Electronics
+110,C10,David,unknown,Kannur,2026-02-10,₹800,Clothing
+111,C11,Fathima,27,kochi,2026-02-12,not available,Food
+112,C12,Sam,42,Kannur,2026-02-15,₹50000,Electronics
+113,C13,Anu,,THRISSUR,2026-02-18,₹1000,Food
+114,C14,Tom,38,Kochi,2026-02-20,₹1050,Clothing
+115,C15,Liya,24,Kannur,2026-02-22,₹900,Food
