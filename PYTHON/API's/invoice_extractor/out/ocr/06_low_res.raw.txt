@@ -1,0 +1,14 @@
+Summit Software Pty INVOICE
+Sena in See i iss 04
+Date: 19/02/2025
+Bill to: Sample Customer Ca
+Due on receipt
+Description Qty Unit price Amount
+Consulting nours 5 70.46 352.30
+Ergonomic chair 9 260.55 2,344.95
+Whiteboard markers (box) 7 431,36 3,019.52
+Network switch 8-port 7 17631 1,234.17
+‘Toner cartridge black 3 246.53 73959
+Subtotal 7,690.53
+Tax (5%) 38453
+Total 8,075.06

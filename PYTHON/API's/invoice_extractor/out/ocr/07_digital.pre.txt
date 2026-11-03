@@ -1,0 +1,22 @@
+Bluebird Print & Design INVOICE
+
+12 Industrial Road, Sample City ;
+
+accounts @ example.com Invoice No: INV-9797
+
+Date: Apr 28, 2025
+
+Bill to: Sample Customer Co
+
+Due on receipt
+
+Description Qty Unit price Amount
+
+Network switch 8-port 7 185.65 1,299.55
+
+USB-C cable 2m 8 255.86 2,046.88
+
+Printer paper A4 (case) 9 413.73 3,723.57
+Subtotal 7,070.00
+Tax (5%) 353.50
+Total 7,423.50

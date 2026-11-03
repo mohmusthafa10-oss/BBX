@@ -1,0 +1,25 @@
+{
+  "invoice_no": "INV-9797",
+  "date": "Apr 28, 2025",
+  "vendor": "Bluebird Print & Design",
+  "subtotal": 7070.0,
+  "tax": 353.5,
+  "total": 7423.5,
+  "items": [
+    {
+      "description": "Network switch 8-port",
+      "qty": 7,
+      "amount": 1299.55
+    },
+    {
+      "description": "USB-C cable 2m",
+      "qty": 8,
+      "amount": 2046.88
+    },
+    {
+      "description": "Printer paper A4 (case)",
+      "qty": 9,
+      "amount": 3723.57
+    }
+  ]
+}

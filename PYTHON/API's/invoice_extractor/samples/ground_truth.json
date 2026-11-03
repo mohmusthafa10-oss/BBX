@@ -1,0 +1,289 @@
+[
+  {
+    "file": "01_clean_scan.png",
+    "kind": "clean scan",
+    "variant": "A",
+    "invoice_no": "INV-4257",
+    "date": "2025-01-28",
+    "vendor": "Summit Software Pty",
+    "subtotal": 1692.37,
+    "tax": 169.24,
+    "total_printed": 1861.61,
+    "items": [
+      [
+        "Toner cartridge black",
+        4,
+        281.68
+      ],
+      [
+        "Printer paper A4 (case)",
+        2,
+        652.22
+      ],
+      [
+        "Whiteboard markers (box)",
+        9,
+        408.42
+      ],
+      [
+        "Laptop stand",
+        7,
+        133.91
+      ],
+      [
+        "Consulting hours",
+        2,
+        216.14
+      ]
+    ],
+    "arithmetic_ok": true
+  },
+  {
+    "file": "02_clean_scan_b.png",
+    "kind": "clean scan",
+    "variant": "B",
+    "invoice_no": "INV-6635",
+    "date": "2025-04-10",
+    "vendor": "Maple & Oak Stationers",
+    "subtotal": 4346.16,
+    "tax": 347.69,
+    "total_printed": 4693.85,
+    "items": [
+      [
+        "Network switch 8-port",
+        1,
+        365.19
+      ],
+      [
+        "Toner cartridge black",
+        3,
+        1008.93
+      ],
+      [
+        "Ergonomic chair",
+        6,
+        817.62
+      ],
+      [
+        "USB-C cable 2m",
+        4,
+        1838.52
+      ],
+      [
+        "Laptop stand",
+        6,
+        315.9
+      ]
+    ],
+    "arithmetic_ok": true
+  },
+  {
+    "file": "03_clean_scan_wrong_total.png",
+    "kind": "clean scan",
+    "variant": "A",
+    "invoice_no": "INV-4733",
+    "date": "2025-03-13",
+    "vendor": "Bluebird Print & Design",
+    "subtotal": 4891.89,
+    "tax": 489.19,
+    "total_printed": 5391.08,
+    "items": [
+      [
+        "Printer paper A4 (case)",
+        2,
+        934.4
+      ],
+      [
+        "Whiteboard markers (box)",
+        7,
+        290.57
+      ],
+      [
+        "Ergonomic chair",
+        5,
+        1994.0
+      ],
+      [
+        "USB-C cable 2m",
+        6,
+        1672.92
+      ]
+    ],
+    "arithmetic_ok": false
+  },
+  {
+    "file": "04_phone_angle.jpg",
+    "kind": "phone photo",
+    "variant": "A",
+    "invoice_no": "INV-3803",
+    "date": "2025-03-15",
+    "vendor": "Maple & Oak Stationers",
+    "subtotal": 2065.14,
+    "tax": 165.21,
+    "total_printed": 2230.35,
+    "items": [
+      [
+        "Ergonomic chair",
+        7,
+        954.24
+      ],
+      [
+        "Network switch 8-port",
+        6,
+        488.52
+      ],
+      [
+        "Printer paper A4 (case)",
+        6,
+        622.38
+      ]
+    ],
+    "arithmetic_ok": true
+  },
+  {
+    "file": "05_phone_angle_b.jpg",
+    "kind": "phone photo",
+    "variant": "B",
+    "invoice_no": "INV-6155",
+    "date": "2026-08-04",
+    "vendor": "Harbor Freight Services",
+    "subtotal": 4828.37,
+    "tax": 241.42,
+    "total_printed": 5069.79,
+    "items": [
+      [
+        "Ergonomic chair",
+        9,
+        976.86
+      ],
+      [
+        "Toner cartridge black",
+        6,
+        2431.2
+      ],
+      [
+        "Consulting hours",
+        1,
+        113.03
+      ],
+      [
+        "Whiteboard markers (box)",
+        1,
+        387.2
+      ],
+      [
+        "Laptop stand",
+        7,
+        920.08
+      ]
+    ],
+    "arithmetic_ok": true
+  },
+  {
+    "file": "06_low_res.jpg",
+    "kind": "low resolution",
+    "variant": "A",
+    "invoice_no": "INV-3504",
+    "date": "2025-02-18",
+    "vendor": "Summit Software Pty",
+    "subtotal": 7690.53,
+    "tax": 384.53,
+    "total_printed": 8075.06,
+    "items": [
+      [
+        "Consulting hours",
+        5,
+        352.3
+      ],
+      [
+        "Ergonomic chair",
+        9,
+        2344.95
+      ],
+      [
+        "Whiteboard markers (box)",
+        7,
+        3019.52
+      ],
+      [
+        "Network switch 8-port",
+        7,
+        1234.17
+      ],
+      [
+        "Toner cartridge black",
+        3,
+        739.59
+      ]
+    ],
+    "arithmetic_ok": true
+  },
+  {
+    "file": "07_digital.pdf",
+    "kind": "digital PDF",
+    "variant": "B",
+    "invoice_no": "INV-9797",
+    "date": "2025-04-28",
+    "vendor": "Bluebird Print & Design",
+    "subtotal": 7070.0,
+    "tax": 353.5,
+    "total_printed": 7423.5,
+    "items": [
+      [
+        "Network switch 8-port",
+        7,
+        1299.55
+      ],
+      [
+        "USB-C cable 2m",
+        8,
+        2046.88
+      ],
+      [
+        "Printer paper A4 (case)",
+        9,
+        3723.57
+      ]
+    ],
+    "arithmetic_ok": true
+  },
+  {
+    "file": "08_scanned_pdf.pdf",
+    "kind": "scanned PDF (no text layer)",
+    "variant": "A",
+    "invoice_no": "INV-7126",
+    "date": "2025-07-23",
+    "vendor": "Harbor Freight Services",
+    "subtotal": 5974.29,
+    "tax": 597.43,
+    "total_printed": 6571.72,
+    "items": [
+      [
+        "Whiteboard markers (box)",
+        8,
+        44.32
+      ],
+      [
+        "Printer paper A4 (case)",
+        5,
+        2333.1
+      ],
+      [
+        "Laptop stand",
+        3,
+        736.98
+      ],
+      [
+        "Ergonomic chair",
+        2,
+        836.74
+      ],
+      [
+        "Toner cartridge black",
+        5,
+        2023.15
+      ]
+    ],
+    "arithmetic_ok": true
+  }
+]

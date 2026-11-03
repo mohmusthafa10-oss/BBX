@@ -1,0 +1,53 @@
+2026-10-24 13:15:29,624 INFO === 01_clean_scan.png
+2026-10-24 13:15:29,625 INFO 01_clean_scan: text layer chars=0 -> path=ocr
+2026-10-24 13:15:37,147 INFO 01_clean_scan: preprocessing done, deskew angle 0.00 deg
+2026-10-24 13:15:39,183 INFO 01_clean_scan: OCR raw conf=92.0 chars=362 | preprocessed conf=91.0 chars=329
+2026-10-24 13:15:39,384 INFO 01_clean_scan: extraction uses raw OCR (higher mean confidence)
+2026-10-24 13:15:39,385 INFO 01_clean_scan: regex vs position disagreements: items: regex 3 rows vs position 5 rows
+2026-10-24 13:15:39,499 INFO 01_clean_scan: route=needs_review ['line items sum 906.24 != subtotal 1692.37', 'regex and position extraction disagree: items: regex 3 rows vs position 5 rows']
+2026-10-24 13:15:39,500 INFO === 02_clean_scan_b.png
+2026-10-24 13:15:39,500 INFO 02_clean_scan_b: text layer chars=0 -> path=ocr
+2026-10-24 13:15:46,793 INFO 02_clean_scan_b: preprocessing done, deskew angle 0.00 deg
+2026-10-24 13:15:48,714 INFO 02_clean_scan_b: OCR raw conf=93.7 chars=355 | preprocessed conf=89.8 chars=312
+2026-10-24 13:15:48,717 INFO 02_clean_scan_b: extraction uses raw OCR (higher mean confidence)
+2026-10-24 13:15:48,718 INFO 02_clean_scan_b: regex vs position disagreements: items: regex 4 rows vs position 5 rows
+2026-10-24 13:15:48,724 INFO 02_clean_scan_b: route=needs_review ['line items sum 4030.26 != subtotal 4346.16', 'regex and position extraction disagree: items: regex 4 rows vs position 5 rows']
+2026-10-24 13:15:48,724 INFO === 03_clean_scan_wrong_total.png
+2026-10-24 13:15:48,724 INFO 03_clean_scan_wrong_total: text layer chars=0 -> path=ocr
+2026-10-24 13:15:55,673 INFO 03_clean_scan_wrong_total: preprocessing done, deskew angle 0.00 deg
+2026-10-24 13:15:57,657 INFO 03_clean_scan_wrong_total: OCR raw conf=89.3 chars=339 | preprocessed conf=92.5 chars=339
+2026-10-24 13:15:57,661 INFO 03_clean_scan_wrong_total: extraction uses preprocessed OCR (higher mean confidence)
+2026-10-24 13:15:57,668 INFO 03_clean_scan_wrong_total: route=needs_review ['subtotal + tax 5381.08 != total 5391.08']
+2026-10-24 13:15:57,668 INFO === 04_phone_angle.jpg
+2026-10-24 13:15:57,668 INFO 04_phone_angle: text layer chars=0 -> path=ocr
+2026-10-24 13:16:10,610 INFO 04_phone_angle: preprocessing done, deskew angle -4.25 deg
+2026-10-24 13:16:13,904 INFO 04_phone_angle: OCR raw conf=33.6 chars=863 | preprocessed conf=60.3 chars=435
+2026-10-24 13:16:13,909 INFO 04_phone_angle: extraction uses preprocessed OCR (higher mean confidence)
+2026-10-24 13:16:13,914 INFO 04_phone_angle: route=needs_review ['mean OCR confidence 60.3 below 80']
+2026-10-24 13:16:13,914 INFO === 05_phone_angle_b.jpg
+2026-10-24 13:16:13,914 INFO 05_phone_angle_b: text layer chars=0 -> path=ocr
+2026-10-24 13:16:20,809 INFO 05_phone_angle_b: preprocessing done, deskew angle 7.25 deg
+2026-10-24 13:16:22,894 INFO 05_phone_angle_b: OCR raw conf=73.9 chars=397 | preprocessed conf=82.9 chars=381
+2026-10-24 13:16:22,897 INFO 05_phone_angle_b: extraction uses preprocessed OCR (higher mean confidence)
+2026-10-24 13:16:22,898 INFO 05_phone_angle_b: regex vs position disagreements: items: regex 4 rows vs position 6 rows
+2026-10-24 13:16:22,903 INFO 05_phone_angle_b: route=needs_review ['line items sum 2397.17 != subtotal 4828.37', 'regex and position extraction disagree: items: regex 4 rows vs position 6 rows']
+2026-10-24 13:16:22,903 INFO === 06_low_res.jpg
+2026-10-24 13:16:22,903 INFO 06_low_res: text layer chars=0 -> path=ocr
+2026-10-24 13:16:24,088 INFO 06_low_res: preprocessing done, deskew angle 0.00 deg
+2026-10-24 13:16:25,627 INFO 06_low_res: OCR raw conf=76.3 chars=317 | preprocessed conf=31.4 chars=269
+2026-10-24 13:16:25,634 INFO 06_low_res: extraction uses raw OCR (higher mean confidence)
+2026-10-24 13:16:25,635 INFO 06_low_res: regex vs position disagreements: items: regex 2 rows vs position 5 rows
+2026-10-24 13:16:25,638 INFO 06_low_res: route=needs_review ['mean OCR confidence 76.3 below 80', 'missing invoice_no', 'missing tax', 'line items sum 2697.25 != subtotal 7690.53', 'regex and position extraction disagree: items: regex 2 rows vs position 5 rows']
+2026-10-24 13:16:25,638 INFO === 07_digital.pdf
+2026-10-24 13:16:25,661 INFO 07_digital: text layer chars=309 -> path=text_layer
+2026-10-24 13:16:29,672 INFO 07_digital: preprocessing done, deskew angle 0.00 deg
+2026-10-24 13:16:31,361 INFO 07_digital: OCR raw conf=90.3 chars=311 | preprocessed conf=92.3 chars=310
+2026-10-24 13:16:31,445 INFO 07_digital: route=accepted 
+2026-10-24 13:16:31,446 INFO === 08_scanned_pdf.pdf
+2026-10-24 13:16:31,454 INFO 08_scanned_pdf: text layer chars=0 -> path=ocr
+2026-10-24 13:16:38,692 INFO 08_scanned_pdf: preprocessing done, deskew angle 0.00 deg
+2026-10-24 13:16:40,606 INFO 08_scanned_pdf: OCR raw conf=90.6 chars=369 | preprocessed conf=89.4 chars=326
+2026-10-24 13:16:40,609 INFO 08_scanned_pdf: extraction uses raw OCR (higher mean confidence)
+2026-10-24 13:16:40,610 INFO 08_scanned_pdf: regex vs position disagreements: items: regex 3 rows vs position 5 rows
+2026-10-24 13:16:40,618 INFO 08_scanned_pdf: route=needs_review ['line items sum 3596.87 != subtotal 5974.29', 'regex and position extraction disagree: items: regex 3 rows vs position 5 rows']
+2026-10-24 13:16:40,622 INFO wrote results.csv, results.md, comparison.csv to out

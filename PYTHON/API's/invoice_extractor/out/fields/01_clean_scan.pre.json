@@ -1,0 +1,35 @@
+{
+  "invoice_no": "NV-257",
+  "date": "Jan 28, 2025",
+  "vendor": "Summit Software Pty",
+  "subtotal": 1692.37,
+  "tax": 169.24,
+  "total": 1861.61,
+  "items": [
+    {
+      "description": "Toner cartridge black",
+      "qty": 4,
+      "amount": 281.68
+    },
+    {
+      "description": "Printer paper A4 (case)",
+      "qty": 2,
+      "amount": 652.22
+    },
+    {
+      "description": "Whiteboard markers (box)",
+      "qty": 9,
+      "amount": 408.42
+    },
+    {
+      "description": "Laptop stand",
+      "qty": 7,
+      "amount": 133.91
+    },
+    {
+      "description": "Consulting hours",
+      "qty": 2,
+      "amount": 216.14
+    }
+  ]
+}

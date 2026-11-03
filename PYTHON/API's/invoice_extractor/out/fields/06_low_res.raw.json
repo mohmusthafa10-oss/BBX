@@ -1,0 +1,20 @@
+{
+  "invoice_no": null,
+  "date": "19/02/2025",
+  "vendor": "Summit Software Pty",
+  "subtotal": 7690.53,
+  "tax": null,
+  "total": 8075.06,
+  "items": [
+    {
+      "description": "Consulting nours",
+      "qty": 5,
+      "amount": 352.3
+    },
+    {
+      "description": "Ergonomic chair",
+      "qty": 9,
+      "amount": 2344.95
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+[
+  "line items sum 3596.87 != subtotal 5974.29",
+  "regex and position extraction disagree: items: regex 3 rows vs position 5 rows"
+]

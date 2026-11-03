@@ -1,0 +1,35 @@
+{
+  "invoice_no": null,
+  "date": "10 Apr 2025",
+  "vendor": "Maple & Oak Stationers",
+  "subtotal": 4346.16,
+  "tax": 347.69,
+  "total": 4693.85,
+  "items": [
+    {
+      "description": "Network switch 8-port",
+      "qty": 1,
+      "amount": 365.19
+    },
+    {
+      "description": "Toner cartridge black",
+      "qty": 3,
+      "amount": 1008.93
+    },
+    {
+      "description": "Ergonomic chair",
+      "qty": 6,
+      "amount": 817.62
+    },
+    {
+      "description": "USB-C cable 2m",
+      "qty": 4,
+      "amount": 1838.52
+    },
+    {
+      "description": "Laptop stand",
+      "qty": 6,
+      "amount": 315.9
+    }
+  ]
+}

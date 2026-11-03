@@ -1,0 +1,14 @@
+Bluebird Print & Design INVOICE
+12 Industrial Road, Sample City . .
+accounts@example.com Invoice No: INV-4733
+Date: 13/03/2025
+Bill to: Sample Customer Co
+Due on receipt
+Description Qty Unit price Amount
+Printer paper A4 (case) 2 467.20 934.40
+Whiteboard markers (box) 7 41.51 290.57
+Ergonomic chair 5 398.80 1,994.00
+USB-C cable 2m 6 278.82 1,672.92
+Subtotal 4,891.89
+Tax (10%) 489.19
+Total 5,391.08

@@ -1,0 +1,35 @@
+{
+  "invoice_no": "INV-6155",
+  "date": "Aug 04, 2026",
+  "vendor": "Harbor Freight Services",
+  "subtotal": 4828.37,
+  "tax": 241.42,
+  "total": 5069.79,
+  "items": [
+    {
+      "description": "Ergonomic Chair",
+      "qty": 9,
+      "amount": 976.86
+    },
+    {
+      "description": "Toner Cartridge black",
+      "qty": 6,
+      "amount": 2431.2
+    },
+    {
+      "description": "Consulting hours",
+      "qty": 1,
+      "amount": 113.03
+    },
+    {
+      "description": "Whiteboarg markers (box) 1",
+      "qty": null,
+      "amount": 387.2
+    },
+    {
+      "description": "Laptop Stand 7",
+      "qty": null,
+      "amount": 920.08
+    }
+  ]
+}

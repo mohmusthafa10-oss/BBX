@@ -1,0 +1,15 @@
+Maple & Oak Stationers INVOICE
+12 Industrial Road, Sample City :
+accounts@example.com Invoice No: INV-6635
+Date: 10 Apr 2025
+Bill to: Sample Customer Co
+Due on receipt
+Description Qty Unit price Amount
+Network switch 8-port 1 365.19 365.19
+Toner cartridge black 3 336.31 1,008.93
+Ergonomic chair 6 136.27 817.62
+USB-C cable 2m 4 459.63 1,838.52
+Laptop stand 6 52:65 315.90
+Subtotal 4,346.16
+Tax (8%) 347.69
+Total 4,693.85

@@ -1,0 +1,9 @@
+document,raw_chars,pre_chars,char_change_pct,raw_conf,pre_conf,conf_gain
+01_clean_scan.png,362,329,-9.1,92.0,91.0,-1.0
+02_clean_scan_b.png,355,312,-12.1,93.7,89.8,-3.9
+03_clean_scan_wrong_total.png,339,339,0.0,89.3,92.5,3.2
+04_phone_angle.jpg,863,435,-49.6,33.6,60.3,26.7
+05_phone_angle_b.jpg,397,381,-4.0,73.9,82.9,9.0
+06_low_res.jpg,317,269,-15.1,76.3,31.4,-44.9
+07_digital.pdf,311,310,-0.3,90.3,92.3,2.0
+08_scanned_pdf.pdf,369,326,-11.7,90.6,89.4,-1.2

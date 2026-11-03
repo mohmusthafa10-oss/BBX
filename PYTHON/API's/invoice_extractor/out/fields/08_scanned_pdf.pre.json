@@ -1,0 +1,30 @@
+{
+  "invoice_no": null,
+  "date": "23/07/2025",
+  "vendor": "Harbor Freight Services",
+  "subtotal": 5974.29,
+  "tax": 597.43,
+  "total": 6571.72,
+  "items": [
+    {
+      "description": "Printer paper A4 (case)",
+      "qty": 5,
+      "amount": 2333.1
+    },
+    {
+      "description": "Laptop stand",
+      "qty": 3,
+      "amount": 736.98
+    },
+    {
+      "description": "Ergonomic chair",
+      "qty": 2,
+      "amount": 836.74
+    },
+    {
+      "description": "Toner cartridge black",
+      "qty": 5,
+      "amount": 2023.15
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+Harbor Freight Services INVOICE
+12 Industrial Road, Sample City : :
+accounts@example.com Invoice No: INV-7126
+Date: 23/07/2025
+Bill to: Sample Customer Co
+Due on receipt
+Description Qty Unit price Amount
+Whiteboard markers (box) 8 554: 44.32
+Printer paper A4 (case) 5 466.62 2:333:10
+Laptop stand 3 245.66 736.98
+Ergonomic chair 2 418.37 836.74
+Toner cartridge black 5 404.63 2,023.15
+Subtotal 5,974.29
+Tax (10%) 597.43
+Total 6,571.72

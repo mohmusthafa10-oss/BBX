@@ -1,0 +1,30 @@
+{
+  "invoice_no": "INV-6155",
+  "date": "Aug 04, 2026",
+  "vendor": "Harbor Freight Services",
+  "subtotal": 4828.37,
+  "tax": 241.42,
+  "total": 5069.79,
+  "items": [
+    {
+      "description": "Ergonomic chair",
+      "qty": 9,
+      "amount": 976.86
+    },
+    {
+      "description": "Consulting hours",
+      "qty": 1,
+      "amount": 113.03
+    },
+    {
+      "description": "Whiteboard markers (box)",
+      "qty": 1,
+      "amount": 387.2
+    },
+    {
+      "description": "Laptop stand",
+      "qty": 7,
+      "amount": 920.08
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "invoice_no": "INV-4257",
+  "date": "Jan 28, 2025",
+  "vendor": "Summit Software Pty",
+  "subtotal": 1692.37,
+  "tax": 169.24,
+  "total": 1861.61,
+  "items": [
+    {
+      "description": "Toner cartridge black",
+      "qty": 4,
+      "amount": 281.68
+    },
+    {
+      "description": "Whiteboard markers (box)",
+      "qty": 9,
+      "amount": 408.42
+    },
+    {
+      "description": "Consulting hours",
+      "qty": 2,
+      "amount": 216.14
+    }
+  ]
+}

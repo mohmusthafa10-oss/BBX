@@ -1,0 +1,30 @@
+{
+  "invoice_no": "INV-4733",
+  "date": "13/03/2025",
+  "vendor": "Bluebird Print & Design",
+  "subtotal": 4891.89,
+  "tax": 489.19,
+  "total": 5391.08,
+  "items": [
+    {
+      "description": "Printer paper A4 (case)",
+      "qty": 2,
+      "amount": 934.4
+    },
+    {
+      "description": "Whiteboard markers (box)",
+      "qty": 7,
+      "amount": 290.57
+    },
+    {
+      "description": "Ergonomic chair",
+      "qty": 5,
+      "amount": 1994.0
+    },
+    {
+      "description": "USB-C cable 2m",
+      "qty": 6,
+      "amount": 1672.92
+    }
+  ]
+}

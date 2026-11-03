@@ -1,0 +1,7 @@
+[
+  "mean OCR confidence 76.3 below 80",
+  "missing invoice_no",
+  "missing tax",
+  "line items sum 2697.25 != subtotal 7690.53",
+  "regex and position extraction disagree: items: regex 2 rows vs position 5 rows"
+]

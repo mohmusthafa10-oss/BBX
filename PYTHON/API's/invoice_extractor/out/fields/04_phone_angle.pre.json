@@ -1,0 +1,25 @@
+{
+  "invoice_no": "INV-3803",
+  "date": "Mar 15, 2025",
+  "vendor": "Maple & Oak Stationers",
+  "subtotal": 2065.14,
+  "tax": 165.21,
+  "total": 2230.35,
+  "items": [
+    {
+      "description": "Ergonomic chair",
+      "qty": 7,
+      "amount": 954.24
+    },
+    {
+      "description": "Network switch 8-port",
+      "qty": 6,
+      "amount": 488.52
+    },
+    {
+      "description": "Printer paper A4 (case)",
+      "qty": 6,
+      "amount": 622.38
+    }
+  ]
+}

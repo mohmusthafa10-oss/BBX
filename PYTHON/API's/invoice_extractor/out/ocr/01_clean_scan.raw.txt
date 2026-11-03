@@ -1,0 +1,15 @@
+Summit Software Pty INVOICE
+12 Industrial Road, Sample City :
+accounts@example.com Invoice No: INV-4257
+Date: Jan 28, 2025
+Bill to: Sample Customer Co
+Due on receipt
+Description Qty Unit price Amount
+Toner cartridge black 4 70.42 281.68
+Printer paper A4 (case) 2 326.11 652:22
+Whiteboard markers (box) 9 45.38 408.42
+Laptop stand vf 19.13 133.91
+Consulting hours 2 108.07 216.14
+Subtotal 1,692.37
+Tax (10%) 169.24
+Total 1,861.61

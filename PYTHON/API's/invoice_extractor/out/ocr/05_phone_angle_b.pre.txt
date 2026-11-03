@@ -1,0 +1,21 @@
+| Harbor Freight Services INVOICE
+12 Industrial Road, Sample City .
+: accounts@example.com Invoice No: INV-6155
+Date: Aug 04, 2026
+Bill to: Sample Customer Co
+Due on receipt
+Description Qty Unit price Amount
+Ergonomic chair 9 108.54 976.86
+| Toner cartridge black 6 405.20 2,431.20 |
+Consulting hours 1 113.03 113.03
+Whiteboard markers (box) 1 387.20 387.20
+; |
+Laptop stand 7 131.44 920.08
+Subtotal 4,828.37 !
+: Tax (5%) 241.42
+, Total 5,069.79
+, :
+|
+. |
+| |
+: |
