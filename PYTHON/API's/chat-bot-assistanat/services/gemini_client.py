@@ -52,3 +52,5 @@ def retry_call(function, attempts=5):
             )
 
             time.sleep(delay)
+
+            

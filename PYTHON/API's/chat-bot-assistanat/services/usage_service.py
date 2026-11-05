@@ -38,3 +38,6 @@ class UsageTracker:
             f"[cost] Turn: ${cost:.8f}"
             f" | Total: ${self.total_cost:.8f}"
         )
+
+
+
